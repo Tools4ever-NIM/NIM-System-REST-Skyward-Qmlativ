@@ -1646,7 +1646,7 @@
                 "pagination": {
                     "mode": "url",
                     "field": "Paging.Next",
-                    "page_size": 5000
+                    "page_size": "{page_size"}
                 },
                 "selector": {
                     "mode": "array",
@@ -1677,6 +1677,12 @@
                 "type": "textbox",
                 "label": "Fiscal Year ID:",
                 "value": ""
+            },
+			{
+                "name": "page_size",
+                "type": "textbox",
+                "label": "Page Size:",
+                "value": "5000"
             }
 
         ]
