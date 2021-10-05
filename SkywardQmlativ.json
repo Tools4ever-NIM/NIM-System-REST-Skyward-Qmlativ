@@ -1646,7 +1646,7 @@
                 "pagination": {
                     "mode": "url",
                     "field": "Paging.Next",
-                    "page_size": "{page_size"}
+                    "page_size": 5000
                 },
                 "selector": {
                     "mode": "array",
