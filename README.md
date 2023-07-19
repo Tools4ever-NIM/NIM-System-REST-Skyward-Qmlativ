@@ -6,7 +6,7 @@ Within the Skyward Web interface, please follow these steps
 - API > User Access
 - Click Add User Access
   - Select Users or Add User
-  - API Type = Generic
+  - API Type = Custom
   - Save
 - API > User
 - Click on User
