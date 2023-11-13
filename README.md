@@ -1,5 +1,119 @@
 # NIM-Conn-System-REST-Skyward-Qmlativ
-NIM Connector for Skyward Qmlativ Generic API
+NIM Connector for Skyward Qmlativ Custom API
+
+## Table of Contents
+- [Available Data](#available-data)
+- [Setting up the API Access](#setting-up-the-api-access)
+  - [General Notes](#general-notes)
+  - [API User](#api-user)
+  - [API User Access](#api-user-access)
+  - [Integration Access Secrets](#integration-access-secrets)
+- [Configure NIM](#configure-nim)
+- [NIM docs](#nim-docs)
+
+
+## Available Data
+- Curriculum_Subject
+- Demographics_Address
+- Demographics_Country
+- Demographics_County
+- Demographics_Directional
+- Demographics_EmailType
+- Demographics_GenderIdentity
+- Demographics_Language
+- Demographics_NameAddress
+- Demographics_NameAlias
+- Demographics_NameEmail
+- Demographics_NamePhone
+- Demographics_NameSuffix
+- Demographics_NameTitle
+- Demographics_Name
+- Demographics_Occupation
+- Demographics_PhoneType
+- Demographics_Relationship
+- Demographics_Street
+- Demographics_Zip
+- District_Building
+- District_BuildingSchoolYear
+- District_CalendarYear
+- District_ConfigEntityYear
+- District_District
+- District_DistrictSchoolYear
+- District_Entity
+- District_FiscalYear
+- District_Floor
+- District_Room
+- District_RoomType
+- District_SchoolYear
+- Employee_Calendar
+- Employee_CheckLocation
+- Employee_DegreeType
+- Employee_Degree
+- Employee_EmployeeDistrict
+- Employee_EmployeeFiscalYear
+- Employee_Employee
+- Employee_EmployeeYearExperience
+- Employee_Employment
+- Employee_EmploymentStatus
+- Employee_Termination
+- Enrollment_EntitySchool
+- Enrollment_EntryCode
+- Enrollment_EntryWithdrawal
+- Enrollment_GradeLevel
+- Enrollment_Homeroom
+- Enrollment_School
+- Enrollment_StudentEntityYear
+- Enrollment_StudentType
+- Enrollment_WithdrawalCode
+- Family_Family
+- Family_FamilyGuardian
+- Family_StudentFamily
+- Family_StudentGuardian
+- FoodService_Customer
+- Position_Assignment
+- Position_AssignmentDetail
+- Position_AssignmentType
+- Position_Department
+- Position_EmployeePlacement
+- Position_EmployeePlacementDetail
+- Position_EmployeePositionType
+- Position_FTEGroup
+- Position_JobType
+- Position_Lane
+- Position_Matrix
+- Position_MatrixLane
+- Position_Placement
+- Position_Position
+- Position_PositionDistribution
+- Position_PositionDistributionSet
+- Position_PositionGroup
+- Position_PositionNumber
+- Position_PositionType
+- Position_Step
+- Scheduling_CourseType
+- Scheduling_Course
+- Scheduling_Meet
+- Scheduling_MeetSummary
+- Scheduling_SchedulingTeam
+- Scheduling_Section
+- Scheduling_StaffMeet
+- Scheduling_StudentSection
+- Security_AuthenticationRole
+- Security_User
+- SkySys_State
+- Staff_ConfigEntityGroupYear
+- Staff_Department
+- Staff_Staff
+- Staff_StaffDepartment
+- Staff_StaffEntityYear
+- Staff_StaffStaffType
+- Staff_StaffType
+- StateReporting_StateInternetAccess
+- StateReporting_StateInternetAccessType
+- Student_InternetAccess
+- Student_InternetAccessType
+- Student_StudentCustomCode
+- Student_Student
 
 ## Setting up the API Access
 ### General Notes
