@@ -61,6 +61,46 @@ Secrets work differently in the Integration Access system than they did in the A
 
 Secrets generated for Integration Access can only be viewed once; they cannot be retrieved after closing the confirmation dialog.
 
+# Configure NIM
+1.	Open the NIM Admin Interface and go to Systems > Overview
+2.	Click “+ Add” to add a new system
+ 
+ ![image](https://github.com/Tools4ever-NIM/NIM-System-REST-Skyward-Qmlativ/assets/24281600/1af7fafb-85b9-429f-abbc-5e1021951462)
+
+3.	Select “Skyward Qmlativ” and name it accordingly. (e.g. Skyward_Qmlativ)
+ 
+ ![image](https://github.com/Tools4ever-NIM/NIM-System-REST-Skyward-Qmlativ/assets/24281600/4357a387-befc-4a33-93f4-0b13a41c6cd9)
+
+4.	Edit the System to configure the connection information
+ 
+ ![image](https://github.com/Tools4ever-NIM/NIM-System-REST-Skyward-Qmlativ/assets/24281600/c2ba793b-f463-4b1d-8145-e6ac8be38128)
+
+5.	Enter the necessary information for the system
+    - Customer/tenant ID
+        - This is the URL to the instance, typically in this format
+            -<Customer>.skyward.com/<customer>API
+    -	Client ID
+        - Enter the Client Key from the Skyward integration Access Screen
+    - Client Key
+        -	Enter the Client Secret from the Skyward Integration Access Screen
+    -	Integration Key
+        - Please reach out to Tools4ever support (support@tools4ever.com) to obtain this key. This key is generated on a per customer basis for access to use the integration
+    - Entity ID
+        - Typically, this is going to be “1”. It is the ID of the District we’ll be connecting to for this instance. In cases where there are multiple districts under one instance, then a system per district is required.
+    - School Year ID
+        - This can remain blank and it will refer to the default active school year. Otherwise, you can specify a specific school year to target
+    - Fiscal Year ID
+        - This can remain blank and it will refer to the default active fiscal year. Otherwise, you can specify a specific fiscal year to target
+          
+6.	Check the connection by click on “Test Connection”
+ 
+ ![image](https://github.com/Tools4ever-NIM/NIM-System-REST-Skyward-Qmlativ/assets/24281600/2309d2e0-9e38-43fc-aab2-76cef043a4db)
+
+7.	Once the test is successful you can click on the “Configuration” tab and select the tables of table you would like to import into NIM
+ 
+ ![image](https://github.com/Tools4ever-NIM/NIM-System-REST-Skyward-Qmlativ/assets/24281600/65987b14-324a-439c-aec3-180320a849ad)
+
+
  
 # NIM Docs
 The official NIM documentation can be found at: https://docs.nimsuite.com
