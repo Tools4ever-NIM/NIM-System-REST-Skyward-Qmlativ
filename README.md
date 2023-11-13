@@ -1,6 +1,10 @@
 # NIM-Conn-System-REST-Skyward-Qmlativ
 NIM Connector for Skyward Qmlativ Custom API
 
+<p align="center"> 
+  <img src="https://www.tools4ever.nl/connector-logos/skywardqmlativ-logo.png">
+</p>
+
 ## Table of Contents
 - [Available Data](#available-data)
 - [Setting up the API Access](#setting-up-the-api-access)
