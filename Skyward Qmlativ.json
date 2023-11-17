@@ -1,0 +1,2910 @@
+{
+  "schema": {
+    "options": {},
+    "crud_objects": {
+      "Curriculum_Subject": {
+        "key": "SubjectID",
+        "parameters": {},
+        "resources": {
+          "SubjectID": "string*",
+          "Code": "string*",
+          "CodeDescription": "string*",
+          "Description": "string*",
+          "DistrictID": "string*",
+          "SchoolYearID": "string*"
+        },
+        "operations": {
+          "Curriculum_SubjectList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Curriculum/Subject"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Demographics_Address": {
+        "key": "AddressID",
+        "parameters": {},
+        "resources": {
+          "AddressID": "string*",
+          "AddressLine2": "string*",
+          "AddressType": "string*",
+          "AddressTypeCode": "string*",
+          "CountyID": "string*",
+          "FormattedFullAddress": "string*",
+          "FreeformAddress": "string*",
+          "FullAddress": "string*",
+          "InternationalAddress1": "string*",
+          "InternationalAddress2": "string*",
+          "InternationalAddress3": "string*",
+          "InternationalAddress4": "string*",
+          "POBox": "string*",
+          "PrintableHTMLAddress": "string*",
+          "SecondaryUnitNumber": "string*",
+          "StreetID": "string*",
+          "StreetNumber": "string*",
+          "StreetNumberAndName": "string*",
+          "StreetNumberAndNameIncludeSecondaryUnit": "string*",
+          "ZipCodeAddOn": "string*",
+          "ZipCodeWithAddon": "string*",
+          "ZipCodeWithAddonNoHyphen": "string*",
+          "ZipID": "string*"
+        },
+        "operations": {
+          "Demographics_AddressList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Demographics/Address"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Demographics_Country": {
+        "key": "CountryID",
+        "parameters": {},
+        "resources": {
+          "CountryID": "string*",
+          "Name": "string*"
+        },
+        "operations": {
+          "Demographics_CountryList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Demographics/Country"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Demographics_County": {
+        "key": "CountyID",
+        "parameters": {},
+        "resources": {
+          "CountyID": "string*",
+          "Name": "string*",
+          "StateID": "string*"
+        },
+        "operations": {
+          "Demographics_CountyList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Demographics/County"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Demographics_Directional": {
+        "key": "DirectionalID",
+        "parameters": {},
+        "resources": {
+          "DirectionalID": "string*",
+          "Code": "string*",
+          "CodeDescription": "string*",
+          "Description": "string*"
+        },
+        "operations": {
+          "Demographics_DirectionalList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Demographics/Directional"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Demographics_EmailType": {
+        "key": "EmailTypeID",
+        "parameters": {},
+        "resources": {
+          "EmailTypeID": "string*",
+          "Code": "string*",
+          "CodeDescription": "string*",
+          "Description": "string*"
+        },
+        "operations": {
+          "Demographics_EmailTypeList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Demographics/EmailType"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Demographics_GenderIdentity": {
+        "key": "GenderIdentityID",
+        "parameters": {},
+        "resources": {
+          "GenderIdentityID": "string*",
+          "Code": "string*",
+          "CodeDescription": "string*",
+          "Description": "string*"
+        },
+        "operations": {
+          "Demographics_GenderIdentityList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Demographics/GenderIdentity"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Demographics_Language": {
+        "key": "LanguageID",
+        "parameters": {},
+        "resources": {
+          "LanguageID": "string*",
+          "Code": "string*",
+          "CodeDescription": "string*",
+          "CurrentStateLanguage": "string*",
+          "CurrentStateLanguageCode": "string*",
+          "Description": "string*"
+        },
+        "operations": {
+          "Demographics_LanguageList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Demographics/Language"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Demographics_NameAddress": {
+        "key": "NameAddressID",
+        "parameters": {},
+        "resources": {
+          "NameAddressID": "string*",
+          "AddressID": "string*",
+          "GetAddressType": "string*",
+          "Is1099": "string*",
+          "IsBusDropoff": "string*",
+          "IsBusPickup": "string*",
+          "IsMailing": "string*",
+          "IsOrderFrom": "string*",
+          "IsPhysical": "string*",
+          "IsPrimaryGuardian": "string*",
+          "IsRemitTo": "string*",
+          "IsW2": "string*",
+          "NameID": "string*"
+        },
+        "operations": {
+          "Demographics_NameAddressList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Demographics/NameAddress"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Demographics_NameAlias": {
+        "key": "NameAliasID",
+        "parameters": {},
+        "resources": {
+          "NameAliasID": "string*",
+          "EffectiveDate": "string*",
+          "FirstName": "string*",
+          "LastName": "string*",
+          "MiddleName": "string*",
+          "NameID": "string*",
+          "NameSuffixID": "string*",
+          "NameTitleID": "string*",
+          "Rank": "string*"
+        },
+        "operations": {
+          "Demographics_NameAliasList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Demographics/NameAlias"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Demographics_NameEmail": {
+        "key": "NameEmailID",
+        "parameters": {},
+        "resources": {
+          "NameEmailID": "string*",
+          "EmailAddress": "string*",
+          "EmailConfirmed": "string*",
+          "EmailTypeID": "string*",
+          "NameID": "string*",
+          "Note": "string*",
+          "Rank": "string*"
+        },
+        "operations": {
+          "Demographics_NameEmailList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Demographics/NameEmail"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          },
+          "Demographics_NameEmailCreate": {
+            "method": "put",
+            "call": {
+              "mode": "normal",
+              "path": "/Custom/{entity_id}/Demographics/NameEmail?searchFields[0]=NameEmailID"
+            },
+            "query_parameters": {},
+            "body": {
+              "DataObject": {
+                "_nim_merge_attributes_": true
+              }
+            },
+            "mergeOutput": true,
+            "semantics": "create",
+            "resource_allowance_default": "optional",
+            "resource_mandatory": [
+              "EmailAddress",
+              "EmailTypeID",
+              "NameID",
+              "Rank"
+            ]
+          },
+          "Demographics_NameEmailUpdate": {
+            "method": "post",
+            "call": {
+              "mode": "normal",
+              "path": "/Custom/{entity_id}/Demographics/NameEmail/{NameEmailID}?searchFields[0]=NameEmailID"
+            },
+            "query_parameters": {},
+            "body": {
+              "DataObject": {
+                "_nim_merge_attributes_": true
+              }
+            },
+            "semantics": "update",
+            "resource_allowance_default": "optional",
+            "resource_mandatory": [
+              "NameEmailID"
+            ]
+          },
+          "Demographics_NameEmailDelete": {
+            "method": "delete",
+            "call": {
+              "mode": "normal",
+              "path": "/Custom/{entity_id}/Demographics/NameEmail/{NameEmailID}?searchFields[0]=NameEmailID"
+            },
+            "query_parameters": {},
+            "semantics": "delete",
+            "resource_allowance_default": "prohibited",
+            "resource_mandatory": [
+              "NameEmailID"
+            ]
+          }
+        }
+      },
+      "Demographics_NamePhone": {
+        "key": "NamePhoneID",
+        "parameters": {},
+        "resources": {
+          "NamePhoneID": "string*",
+          "Extension": "string*",
+          "FormattedPhoneNumber": "string*",
+          "FormattedPhoneNumberCodeEEL": "string*",
+          "FullPhoneNumber": "string*",
+          "FullPhoneNumberWithType": "string*",
+          "IsConfidential": "string*",
+          "IsFax": "string*",
+          "IsInternational": "string*",
+          "IsPrimaryFax": "string*",
+          "NameID": "string*",
+          "Note": "string*",
+          "PhoneNumber": "string*",
+          "PhoneTypeID": "string*",
+          "Rank": "string*"
+        },
+        "operations": {
+          "Demographics_NamePhoneList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Demographics/NamePhone"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          },
+          "Demographics_NamePhoneCreate": {
+            "method": "put",
+            "call": {
+              "mode": "normal",
+              "path": "/Custom/{entity_id}/Demographics/NamePhone?searchFields[0]=NamePhoneID"
+            },
+            "query_parameters": {},
+            "body": {
+              "DataObject": {
+                "_nim_merge_attributes_": true
+              }
+            },
+            "mergeOutput": true,
+            "semantics": "create",
+            "resource_allowance_default": "optional",
+            "resource_mandatory": [
+              "PhoneNumber",
+              "PhoneTypeID",
+              "NameID",
+              "Rank"
+            ]
+          }
+        }
+      },
+      "Demographics_NameSuffix": {
+        "key": "NameSuffixID",
+        "parameters": {},
+        "resources": {
+          "NameSuffixID": "string*",
+          "Code": "string*",
+          "CodeDescription": "string*",
+          "Description": "string*"
+        },
+        "operations": {
+          "Demographics_NameSuffixList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Demographics/NameSuffix"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Demographics_NameTitle": {
+        "key": "NameTitleID",
+        "parameters": {},
+        "resources": {
+          "NameTitleID": "string*",
+          "Code": "string*",
+          "CodeDescription": "string*",
+          "Description": "string*"
+        },
+        "operations": {
+          "Demographics_NameTitleList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Demographics/NameTitle"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Demographics_Name": {
+        "key": "NameID",
+        "parameters": {},
+        "resources": {
+          "NameID": "string*",
+          "Age": "string*",
+          "BirthDate": "string*",
+          "CalculatedPrimaryFormattedPhoneNumber": "string*",
+          "Ethnicity": "string*",
+          "EthnicityAndRace": "string*",
+          "ExternalUniqueIdentifier": "string*",
+          "FirstName": "string*",
+          "FirstNameLegal": "string*",
+          "Gender": "string*",
+          "GenderCode": "string*",
+          "GenderDescription": "string*",
+          "GenderIdentityID": "string*",
+          "LastName": "string*",
+          "LastNameLegal": "string*",
+          "MaritalStatus": "string*",
+          "MaritalStatusCode": "string*",
+          "MiddleName": "string*",
+          "MiddleNameLegal": "string*",
+          "NameAddressMailingID": "string*",
+          "NameKey": "string*",
+          "NameNumber": "string*",
+          "NameSuffixID": "string*",
+          "NameSuffixIDLegal": "string*",
+          "NameTitleID": "string*",
+          "NameTitleIDLegal": "string*",
+          "OccupationID": "string*",
+          "Race": "string*"
+        },
+        "operations": {
+          "Demographics_NameList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Demographics/Name"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          },
+          "Demographics_NameCreate": {
+            "method": "put",
+            "call": {
+              "mode": "normal",
+              "path": "/Custom/{entity_id}/Demographics/Name?searchFields[0]=NameID"
+            },
+            "body": {
+              "DataObject": {
+                "_nim_merge_attributes_": true
+              }
+            },
+            "mergeOutput": true,
+            "semantics": "create",
+            "resource_allowance_default": "optional",
+            "resource_mandatory": [
+              "FirstName",
+              "LastName",
+              "MiddleName"
+            ]
+          }
+        }
+      },
+      "Demographics_Occupation": {
+        "key": "OccupationID",
+        "parameters": {},
+        "resources": {
+          "OccupationID": "string*",
+          "Code": "string*",
+          "CodeDescription": "string*",
+          "Description": "string*"
+        },
+        "operations": {
+          "Demographics_OccupationList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Demographics/Occupation"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Demographics_PhoneType": {
+        "key": "PhoneTypeID",
+        "parameters": {},
+        "resources": {
+          "PhoneTypeID": "string*",
+          "Code": "string*",
+          "CodeDescription": "string*",
+          "Description": "string*"
+        },
+        "operations": {
+          "Demographics_PhoneTypeList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Demographics/PhoneType"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Demographics_Relationship": {
+        "key": "RelationshipID",
+        "parameters": {},
+        "resources": {
+          "RelationshipID": "string*",
+          "Code": "string*",
+          "CodeDescription": "string*",
+          "Description": "string*",
+          "RelationshipType": "string*",
+          "RelationshipTypeCode": "string*",
+          "ShortenedDescription": "string*"
+        },
+        "operations": {
+          "Demographics_RelationshipList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Demographics/Relationship"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Demographics_Street": {
+        "key": "StreetID",
+        "parameters": {},
+        "resources": {
+          "StreetID": "string*",
+          "DirectionalID": "string*",
+          "FormattedStreet": "string*",
+          "Name": "string*",
+          "StreetNameWithDirectionCode": "string*",
+          "ZipID": "string*"
+        },
+        "operations": {
+          "Demographics_StreetList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Demographics/Street"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Demographics_Zip": {
+        "key": "ZipID",
+        "parameters": {},
+        "resources": {
+          "ZipID": "string*",
+          "City": "string*",
+          "CityState": "string*",
+          "CityStateCode": "string*",
+          "CityStateZip": "string*",
+          "CityZipCode": "string*",
+          "CountryCode": "string*",
+          "FreeFormCountry": "string*",
+          "FreeFormState": "string*",
+          "StateID": "string*",
+          "ZipCode": "string*"
+        },
+        "operations": {
+          "Demographics_ZipList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Demographics/Zip"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "District_Building": {
+        "key": "BuildingID",
+        "parameters": {},
+        "resources": {
+          "BuildingID": "string*",
+          "AddressID": "string*",
+          "Code": "string*",
+          "CodeDescription": "string*",
+          "Description": "string*",
+          "DistrictID": "string*"
+        },
+        "operations": {
+          "District_BuildingList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/District/Building"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "District_BuildingSchoolYear": {
+        "key": "BuildingSchoolYearID",
+        "parameters": {},
+        "resources": {
+          "BuildingSchoolYearID": "string*",
+          "BuildingID": "string*",
+          "SchoolYearID": "string*"
+        },
+        "operations": {
+          "District_BuildingSchoolYearList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/District/BuildingSchoolYear"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "District_CalendarYear": {
+        "key": "CalendarYearID",
+        "parameters": {},
+        "resources": {
+          "CalendarYearID": "string*",
+          "Description": "string*",
+          "NumericYear": "string*"
+        },
+        "operations": {
+          "District_CalendarYearList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/District/CalendarYear"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "District_ConfigEntityYear": {
+        "key": "ConfigEntityYearID",
+        "parameters": {},
+        "resources": {
+          "ConfigEntityYearID": "string*",
+          "EntityID": "string*",
+          "SchoolYearID": "string*"
+        },
+        "operations": {
+          "District_ConfigEntityYearList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/District/ConfigEntityYear"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "District_District": {
+        "key": "DistrictID",
+        "parameters": {},
+        "resources": {
+          "DistrictID": "string*",
+          "BuildingID": "string*",
+          "CodeName": "string*",
+          "FaxNumber": "string*",
+          "FaxNumberIsInternational": "string*",
+          "FormattedPhoneNumber": "string*",
+          "IsCurrentlySelected": "string*",
+          "Name": "string*",
+          "NCESIDCode": "string*",
+          "PhoneNumber": "string*",
+          "PhoneNumberIsInternational": "string*",
+          "StaffIDSuperintendent": "string*",
+          "StateDistrictCode": "string*"
+        },
+        "operations": {
+          "District_DistrictList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/District/District"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "District_DistrictSchoolYear": {
+        "key": "DistrictSchoolYearID",
+        "parameters": {},
+        "resources": {
+          "DistrictSchoolYearID": "string*",
+          "DistrictID": "string*",
+          "SchoolYearID": "string*"
+        },
+        "operations": {
+          "District_DistrictSchoolYearList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/District/DistrictSchoolYear"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "District_Entity": {
+        "key": "EntityID",
+        "parameters": {},
+        "resources": {
+          "EntityID": "string*",
+          "CampusID": "string*",
+          "Code": "string*",
+          "CodeName": "string*",
+          "DistrictCodeEntityCode": "string*",
+          "DistrictID": "string*",
+          "IsCurrentlySelected": "string*",
+          "IsDistrictWide": "string*",
+          "IsSystemWide": "string*",
+          "Name": "string*",
+          "SchoolYearIDCurrent": "string*"
+        },
+        "operations": {
+          "District_EntityList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/District/Entity"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "District_FiscalYear": {
+        "key": "FiscalYearID",
+        "parameters": {},
+        "resources": {
+          "FiscalYearID": "string*",
+          "Description": "string*",
+          "DistrictID": "string*",
+          "EndDate": "string*",
+          "IsClosed": "string*",
+          "IsLockedByHR": "string*",
+          "NumericYear": "string*",
+          "StartDate": "string*"
+        },
+        "operations": {
+          "District_FiscalYearList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/District/FiscalYear"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "District_Floor": {
+        "key": "FloorID",
+        "parameters": {},
+        "resources": {
+          "FloorID": "string*",
+          "BuildingID": "string*",
+          "Code": "string*",
+          "CodeDescription": "string*",
+          "Description": "string*"
+        },
+        "operations": {
+          "District_FloorList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/District/Floor"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "District_Room": {
+        "key": "RoomID",
+        "parameters": {},
+        "resources": {
+          "RoomID": "string*",
+          "BuildingID": "string*",
+          "FloorID": "string*",
+          "FormattedPhoneNumber": "string*",
+          "IsActive": "string*",
+          "MaxConcurrentSections": "string*",
+          "MaxSeats": "string*",
+          "PhoneExtension": "string*",
+          "PhoneNumber": "string*",
+          "RoomNumber": "string*",
+          "RoomTypeID": "string*"
+        },
+        "operations": {
+          "District_RoomList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/District/Room"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "District_RoomType": {
+        "key": "RoomTypeID",
+        "parameters": {},
+        "resources": {
+          "RoomTypeID": "string*",
+          "Code": "string*",
+          "CodeDescription": "string*",
+          "Description": "string*",
+          "DistrictID": "string*"
+        },
+        "operations": {
+          "District_RoomTypeList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/District/RoomType"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "District_SchoolYear": {
+        "key": "SchoolYearID",
+        "parameters": {},
+        "resources": {
+          "SchoolYearID": "string*",
+          "Description": "string*",
+          "IsCurrentYearForProvidedEntity": "string*",
+          "IsUpcomingYearForProvidedEntity": "string*",
+          "NextNumericYear": "string*",
+          "NumericYear": "string*",
+          "PreviousNumericYear": "string*"
+        },
+        "operations": {
+          "District_SchoolYearList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/District/SchoolYear"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Employee_Calendar": {
+        "key": "CalendarID",
+        "parameters": {},
+        "resources": {
+          "CalendarID": "string*",
+          "Code": "string*",
+          "CodeDescription": "string*",
+          "Description": "string*",
+          "DistrictID": "string*",
+          "EndDate": "string*",
+          "FiscalYearID": "string*",
+          "StartDate": "string*"
+        },
+        "operations": {
+          "Employee_CalendarList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Employee/Calendar"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Employee_CheckLocation": {
+        "key": "CheckLocationID",
+        "parameters": {},
+        "resources": {
+          "CheckLocationID": "string*",
+          "Code": "string*",
+          "CodeDescription": "string*",
+          "Description": "string*",
+          "DistrictID": "string*"
+        },
+        "operations": {
+          "Employee_CheckLocationList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Employee/CheckLocation"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Employee_DegreeType": {
+        "key": "DegreeTypeID",
+        "parameters": {},
+        "resources": {
+          "DegreeTypeID": "string*",
+          "Code": "string*",
+          "CodeDescription": "string*",
+          "Description": "string*",
+          "Rank": "string*"
+        },
+        "operations": {
+          "Employee_DegreeTypeList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Employee/DegreeType"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Employee_Degree": {
+        "key": "DegreeID",
+        "parameters": {},
+        "resources": {
+          "DegreeID": "string*",
+          "AdditionalCredits": "string*",
+          "ApprovedDate": "string*",
+          "Credits": "string*",
+          "DegreeTypeID": "string*",
+          "EmployeeID": "string*",
+          "GPA": "string*",
+          "ReceivedDate": "string*"
+        },
+        "operations": {
+          "Employee_DegreeList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Employee/Degree"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Employee_EmployeeDistrict": {
+        "key": "EmployeeDistrictID",
+        "parameters": {},
+        "resources": {
+          "EmployeeDistrictID": "string*",
+          "CheckLocationID": "string*",
+          "DistrictID": "string*",
+          "EmployeeID": "string*",
+          "HireDateOriginal": "string*",
+          "I9Date": "string*",
+          "IsActive": "string*",
+          "IsBLSFaculty": "string*",
+          "IsEEOCFullTime": "string*",
+          "StartDateOriginal": "string*",
+          "TaxableLifeInsuranceContractCoverage": "string*",
+          "W4Date": "string*"
+        },
+        "operations": {
+          "Employee_EmployeeDistrictList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Employee/EmployeeDistrict"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Employee_EmployeeFiscalYear": {
+        "key": "EmployeeFiscalYearID",
+        "parameters": {},
+        "resources": {
+          "EmployeeFiscalYearID": "string*",
+          "DistrictID": "string*",
+          "EmployeeDistrictID": "string*",
+          "EmployeeID": "string*",
+          "FiscalYearID": "string*"
+        },
+        "operations": {
+          "Employee_EmployeeFiscalYearList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Employee/EmployeeFiscalYear"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Employee_Employee": {
+        "key": "EmployeeID",
+        "parameters": {},
+        "resources": {
+          "EmployeeID": "string*",
+          "AllowEmployeeAccess": "string*",
+          "EmployeeNumber": "string*",
+          "EmployeeNumberStored": "string*",
+          "NameID": "string*"
+        },
+        "operations": {
+          "Employee_EmployeeList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Employee/Employee"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Employee_EmployeeYearExperience": {
+        "key": "EmployeeYearExperienceID",
+        "parameters": {},
+        "resources": {
+          "EmployeeYearExperienceID": "string*",
+          "Amount": "string*",
+          "DistrictID": "string*",
+          "EmployeeID": "string*",
+          "FiscalYearID": "string*"
+        },
+        "operations": {
+          "Employee_EmployeeYearExperienceList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Employee/EmployeeYearExperience"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Employee_Employment": {
+        "key": "EmploymentID",
+        "parameters": {},
+        "resources": {
+          "EmploymentID": "string*",
+          "Comment": "string*",
+          "DistrictID": "string*",
+          "EmployeeID": "string*",
+          "EmploymentStatusID": "string*",
+          "EmploymentYears": "string*",
+          "EndDate": "string*",
+          "HireDate": "string*",
+          "IsTerminated": "string*",
+          "StartDate": "string*",
+          "TerminationID": "string*"
+        },
+        "operations": {
+          "Employee_EmploymentList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Employee/Employment"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Employee_EmploymentStatus": {
+        "key": "EmploymentStatusID",
+        "parameters": {},
+        "resources": {
+          "EmploymentStatusID": "string*",
+          "Code": "string*",
+          "CodeDescription": "string*",
+          "Description": "string*",
+          "DistrictID": "string*",
+          "IsLeaveOfAbsence": "string*"
+        },
+        "operations": {
+          "Employee_EmploymentStatusList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Employee/EmploymentStatus"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Employee_Termination": {
+        "key": "TerminationID",
+        "parameters": {},
+        "resources": {
+          "TerminationID": "string*",
+          "Code": "string*",
+          "CodeDescription": "string*",
+          "Description": "string*",
+          "DistrictID": "string*"
+        },
+        "operations": {
+          "Employee_TerminationList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Employee/Termination"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Enrollment_EntitySchool": {
+        "key": "EntitySchoolID",
+        "parameters": {},
+        "resources": {
+          "EntitySchoolID": "string*",
+          "EntityID": "string*",
+          "IsDefaultEntityForSchool": "string*",
+          "IsDefaultSchoolForEntity": "string*",
+          "IsOnlySchoolInEntity": "string*",
+          "SchoolID": "string*"
+        },
+        "operations": {
+          "Enrollment_EntitySchoolList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Enrollment/EntitySchool"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Enrollment_EntryCode": {
+        "key": "EntryCodeID",
+        "parameters": {},
+        "resources": {
+          "EntryCodeID": "string*",
+          "Code": "string*",
+          "CodeDescription": "string*",
+          "Description": "string*",
+          "DistrictID": "string*",
+          "SchoolYearID": "string*",
+          "Type": "string*",
+          "TypeCode": "string*"
+        },
+        "operations": {
+          "Enrollment_EntryCodeList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Enrollment/EntryCode"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Enrollment_EntryWithdrawal": {
+        "key": "EntryWithdrawalID",
+        "parameters": {},
+        "resources": {
+          "EntryWithdrawalID": "string*",
+          "CalendarID": "string*",
+          "EndDate": "string*",
+          "EntityID": "string*",
+          "EntryCodeID": "string*",
+          "IsDefaultEntity": "string*",
+          "SchoolID": "string*",
+          "SchoolYearID": "string*",
+          "StartDate": "string*",
+          "StudentID": "string*",
+          "StudentTypeID": "string*",
+          "WithdrawalCodeID": "string*",
+          "WithdrawalDate": "string*"
+        },
+        "operations": {
+          "Enrollment_EntryWithdrawalList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Enrollment/EntryWithdrawal"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Enrollment_GradeLevel": {
+        "key": "GradeLevelID",
+        "parameters": {},
+        "resources": {
+          "GradeLevelID": "string*",
+          "Code": "string*",
+          "CodeDescription": "string*",
+          "Description": "string*",
+          "DistrictID": "string*",
+          "FederalGradeLevel": "string*",
+          "FederalGradeLevelCode": "string*",
+          "NumericValue": "string*",
+          "StateGradeLevel": "string*"
+        },
+        "operations": {
+          "Enrollment_GradeLevelList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Enrollment/GradeLevel"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Enrollment_Homeroom": {
+        "key": "HomeroomID",
+        "parameters": {},
+        "resources": {
+          "HomeroomID": "string*",
+          "Code": "string*",
+          "EntityID": "string*",
+          "HomeroomDetails": "string*",
+          "RoomID": "string*",
+          "SchoolYearID": "string*",
+          "StaffID": "string*"
+        },
+        "operations": {
+          "Enrollment_HomeroomList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Enrollment/Homeroom"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Enrollment_School": {
+        "key": "SchoolID",
+        "parameters": {},
+        "resources": {
+          "SchoolID": "string*",
+          "BuildingID": "string*",
+          "Code": "string*",
+          "CodeName": "string*",
+          "DistrictID": "string*",
+          "FaxNumber": "string*",
+          "FormattedFaxNumber": "string*",
+          "FormattedPhoneNumber": "string*",
+          "GradeLevelIDHigh": "string*",
+          "GradeLevelIDLow": "string*",
+          "Name": "string*",
+          "PhoneNumber": "string*",
+          "SchoolYearID": "string*",
+          "StaffIDPrincipal": "string*",
+          "StateAssignedID": "string*",
+          "Type": "string*",
+          "TypeCode": "string*"
+        },
+        "operations": {
+          "Enrollment_SchoolList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Enrollment/School"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Enrollment_StudentEntityYear": {
+        "key": "StudentEntityYearID",
+        "parameters": {},
+        "resources": {
+          "StudentEntityYearID": "string*",
+          "CurrentPercentEnrolled": "string*",
+          "EntityID": "string*",
+          "Grade": "string*",
+          "HomeroomID": "string*",
+          "IsActive": "string*",
+          "IsDefaultEntity": "string*",
+          "NameID": "string*",
+          "SchedulingTeamID": "string*",
+          "SchoolYearID": "string*",
+          "SignedAcceptableUsePolicy": "string*",
+          "StaffIDAdvisor": "string*",
+          "StaffIDDisciplineOfficer": "string*",
+          "StudentID": "string*",
+          "StudentNumber": "string*",
+          "WithdrawalDate": "string*"
+        },
+        "operations": {
+          "Enrollment_StudentEntityYearList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Enrollment/StudentEntityYear"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Enrollment_StudentType": {
+        "key": "StudentTypeID",
+        "parameters": {},
+        "resources": {
+          "StudentTypeID": "string*",
+          "Code": "string*",
+          "CodeDescription": "string*",
+          "Description": "string*",
+          "DistrictID": "string*"
+        },
+        "operations": {
+          "Enrollment_StudentTypeList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Enrollment/StudentType"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Enrollment_WithdrawalCode": {
+        "key": "WithdrawalCodeID",
+        "parameters": {},
+        "resources": {
+          "WithdrawalCodeID": "string*",
+          "Code": "string*",
+          "CodeDescription": "string*",
+          "Description": "string*",
+          "DistrictID": "string*",
+          "SchoolYearID": "string*",
+          "Type": "string*",
+          "TypeCode": "string*"
+        },
+        "operations": {
+          "Enrollment_WithdrawalCodeList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Enrollment/WithdrawalCode"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Family_Family": {
+        "key": "FamilyID",
+        "parameters": {},
+        "resources": {
+          "FamilyID": "string*",
+          "FoodServiceBeginningBalance": "string*",
+          "FoodServiceCurrentBalance": "string*",
+          "LanguageIDHome": "string*"
+        },
+        "operations": {
+          "Family_FamilyList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Family/Family"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Family_FamilyGuardian": {
+        "key": "FamilyGuardianID",
+        "parameters": {},
+        "resources": {
+          "FamilyGuardianID": "string*",
+          "FamilyID": "string*",
+          "NameID": "string*",
+          "Rank": "string*"
+        },
+        "operations": {
+          "Family_FamilyGuardianList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Family/FamilyGuardian"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Family_StudentFamily": {
+        "key": "StudentFamilyID",
+        "parameters": {},
+        "resources": {
+          "StudentFamilyID": "string*",
+          "AllowAddAddress": "string*",
+          "AllowStudentPickup": "string*",
+          "FamilyID": "string*",
+          "HasEmployeeGuardian": "string*",
+          "IsCustodialGuardian": "string*",
+          "IsEmergencyContact": "string*",
+          "IsPrimaryEmergencyContact": "string*",
+          "Rank": "string*",
+          "ReceivesForms": "string*",
+          "Relationship": "string*",
+          "StudentFamilyCount": "string*",
+          "StudentID": "string*"
+        },
+        "operations": {
+          "Family_StudentFamilyList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Family/StudentFamily"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Family_StudentGuardian": {
+        "key": "StudentGuardianID",
+        "parameters": {},
+        "resources": {
+          "StudentGuardianID": "string*",
+          "AllowFamilyAccess": "string*",
+          "AllowStudentPickup": "string*",
+          "GuardianCategory": "string*",
+          "IsCustodialGuardian": "string*",
+          "IsEmergencyContact": "string*",
+          "NameIDGuardian": "string*",
+          "NeedsSecurityGroupAudit": "string*",
+          "Rank": "string*",
+          "RelationshipID": "string*",
+          "StudentID": "string*"
+        },
+        "operations": {
+          "Family_StudentGuardianList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Family/StudentGuardian"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "FoodService_Customer": {
+        "key": "CustomerID",
+        "parameters": {},
+        "resources": {
+          "CustomerID": "string*",
+          "AsOfBalanceDate": "string*",
+          "BalanceAsOfDate": "string*",
+          "CurrentBalance": "string*",
+          "CurrentIndividualBalance": "string*",
+          "CustomerNumber": "string*",
+          "DistrictID": "string*",
+          "IsCurrentActive": "string*",
+          "NameID": "string*",
+          "PIN": "string*"
+        },
+        "operations": {
+          "FoodService_CustomerList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/FoodService/Customer"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Position_Assignment": {
+        "key": "AssignmentID",
+        "parameters": {},
+        "resources": {
+          "AssignmentID": "string*",
+          "AssignmentCodeIdentifier": "string*",
+          "AssignmentIdentifier": "string*",
+          "EmployeeID": "string*",
+          "EmployeePlacementID": "string*",
+          "EndDate": "string*",
+          "IsEEOCPrimaryAssignment": "string*",
+          "IsScheduleVerified": "string*",
+          "PercentEmployed": "string*",
+          "PositionDistributionAssignmentRangeIdentifier": "string*",
+          "PositionDistributionsAssignmentTypeCodeDescription": "string*",
+          "PositionDistributionsAssignmentTypeCodes": "string*",
+          "PositionDistributionsAssignmentTypeDescriptions": "string*",
+          "PositionDistributionsBuildingCodes": "string*",
+          "PositionDistributionsBuildingDescriptions": "string*",
+          "PositionID": "string*",
+          "PositionTypeEmployeeIdentifier": "string*",
+          "StartDate": "string*",
+          "StateReportingDistributionsAssignmentTypeCodes": "string*",
+          "StateReportingDistributionsBuildingCodes": "string*",
+          "StateReportingDistributionsPositionTypeCodes": "string*",
+          "StateReportingDistributionsPositionTypeDescriptions": "string*",
+          "SupplementTotalPay": "string*",
+          "WorkEndDate": "string*",
+          "WorkStartDate": "string*"
+        },
+        "operations": {
+          "Position_AssignmentList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Position/Assignment"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Position_AssignmentDetail": {
+        "key": "AssignmentDetailID",
+        "parameters": {},
+        "resources": {
+          "AssignmentDetailID": "string*",
+          "AssignmentDetailIdentifier": "string*",
+          "AssignmentID": "string*",
+          "EmployeePlacementDetailID": "string*",
+          "EmployeePlacementIDBase": "string*",
+          "EndDate": "string*",
+          "EnteredFTE": "string*",
+          "IsOverloaded": "string*",
+          "IsPrimary": "string*",
+          "StepID": "string*",
+          "StepIDBase": "string*"
+        },
+        "operations": {
+          "Position_AssignmentDetailList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Position/AssignmentDetail"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Position_AssignmentType": {
+        "key": "AssignmentTypeID",
+        "parameters": {},
+        "resources": {
+          "AssignmentTypeID": "string*",
+          "Code": "string*",
+          "CodeDescription": "string*",
+          "Description": "string*",
+          "DistrictID": "string*",
+          "FiscalYearID": "string*"
+        },
+        "operations": {
+          "Position_AssignmentTypeList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Position/AssignmentType"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Position_Department": {
+        "key": "DepartmentID",
+        "parameters": {},
+        "resources": {
+          "DepartmentID": "string*",
+          "Code": "string*",
+          "CodeDescription": "string*",
+          "Description": "string*",
+          "DistrictID": "string*",
+          "FiscalYearID": "string*"
+        },
+        "operations": {
+          "Position_DepartmentList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Position/Department"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Position_EmployeePlacement": {
+        "key": "EmployeePlacementID",
+        "parameters": {},
+        "resources": {
+          "EmployeePlacementID": "string*",
+          "Description": "string*",
+          "EmployeeID": "string*",
+          "PlacementID": "string*"
+        },
+        "operations": {
+          "Position_EmployeePlacementList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Position/EmployeePlacement"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Position_EmployeePlacementDetail": {
+        "key": "EmployeePlacementDetailID",
+        "parameters": {},
+        "resources": {
+          "EmployeePlacementDetailID": "string*",
+          "Credits": "string*",
+          "EffectiveDate": "string*",
+          "EmployeePlacementID": "string*",
+          "LaneID": "string*",
+          "Placement": "string*",
+          "StepNumber": "string*"
+        },
+        "operations": {
+          "Position_EmployeePlacementDetailList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Position/EmployeePlacementDetail"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Position_EmployeePositionType": {
+        "key": "EmployeePositionTypeID",
+        "parameters": {},
+        "resources": {
+          "EmployeePositionTypeID": "string*",
+          "CurrentTotalFTE": "string*",
+          "EmployeeID": "string*",
+          "PositionTypeID": "string*"
+        },
+        "operations": {
+          "Position_EmployeePositionTypeList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Position/EmployeePositionType"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Position_FTEGroup": {
+        "key": "FTEGroupID",
+        "parameters": {},
+        "resources": {
+          "FTEGroupID": "string*",
+          "ClosingAssignmentFTE": "string*",
+          "Code": "string*",
+          "CodeDescription": "string*",
+          "Description": "string*",
+          "DistrictID": "string*",
+          "FiscalYearID": "string*",
+          "MaximumFTE": "string*",
+          "OptimalFTE": "string*",
+          "TotalPositionFTE": "string*"
+        },
+        "operations": {
+          "Position_FTEGroupList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Position/FTEGroup"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Position_JobType": {
+        "key": "JobTypeID",
+        "parameters": {},
+        "resources": {
+          "JobTypeID": "string*",
+          "Code": "string*",
+          "CodeDescription": "string*",
+          "Description": "string*",
+          "DistrictID": "string*",
+          "FiscalYearID": "string*"
+        },
+        "operations": {
+          "Position_JobTypeList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Position/JobType"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Position_Lane": {
+        "key": "LaneID",
+        "parameters": {},
+        "resources": {
+          "LaneID": "string*",
+          "Code": "string*",
+          "CodeDescription": "string*",
+          "Description": "string*",
+          "DistrictID": "string*"
+        },
+        "operations": {
+          "Position_LaneList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Position/Lane"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Position_Matrix": {
+        "key": "MatrixID",
+        "parameters": {},
+        "resources": {
+          "MatrixID": "string*",
+          "Code": "string*",
+          "CodeDescription": "string*",
+          "Description": "string*",
+          "DistrictID": "string*",
+          "FiscalYearID": "string*"
+        },
+        "operations": {
+          "Position_MatrixList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Position/Matrix"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Position_MatrixLane": {
+        "key": "MatrixLaneID",
+        "parameters": {},
+        "resources": {
+          "MatrixLaneID": "string*",
+          "DisplayOrder": "string*",
+          "LaneID": "string*"
+        },
+        "operations": {
+          "Position_MatrixLaneList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Position/MatrixLane"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Position_Placement": {
+        "key": "PlacementID",
+        "parameters": {},
+        "resources": {
+          "PlacementID": "string*",
+          "Code": "string*",
+          "CodeDescription": "string*",
+          "Description": "string*",
+          "DistrictID": "string*"
+        },
+        "operations": {
+          "Position_PlacementList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Position/Placement"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Position_Position": {
+        "key": "PositionID",
+        "parameters": {},
+        "resources": {
+          "PositionID": "string*",
+          "AvailableClosingFTE": "string*",
+          "CalendarID": "string*",
+          "DistrictID": "string*",
+          "EndDate": "string*",
+          "FiscalYearID": "string*",
+          "JobTypeID": "string*",
+          "PositionClosingAssignmentIdentifier": "string*",
+          "PositionCodeIdentifier": "string*",
+          "PositionDistributionsAssignmentTypeCodes": "string*",
+          "PositionDistributionsAssignmentTypeDescriptions": "string*",
+          "PositionDistributionsBuildingCodes": "string*",
+          "PositionDistributionsBuildingDescriptions": "string*",
+          "PositionDistributionsDepartmentCodes": "string*",
+          "PositionDistributionsDepartmentDescriptions": "string*",
+          "PositionDistributionsFTEGroupCodes": "string*",
+          "PositionDistributionsFTEGroupDescriptions": "string*",
+          "PositionGroupID": "string*",
+          "PositionNumberID": "string*",
+          "PositionTypeAssignmentTypeCodes": "string*",
+          "PositionTypeID": "string*",
+          "StartDate": "string*",
+          "VacantClosingAssignmentFTE": "string*",
+          "VacantCurrentAssignmentFTE": "string*"
+        },
+        "operations": {
+          "Position_PositionList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Position/Position"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Position_PositionDistribution": {
+        "key": "PositionDistributionID",
+        "parameters": {},
+        "resources": {
+          "PositionDistributionID": "string*",
+          "AssignmentTypeID": "string*",
+          "BudgetedFTE": "string*",
+          "BudgetedHoursPerDay": "string*",
+          "BuildingID": "string*",
+          "CalculatedBudgetedHoursPerDay": "string*",
+          "ClosingAssignmentFTE": "string*",
+          "DepartmentID": "string*",
+          "FTEGroupID": "string*",
+          "PositionDistributionSetID": "string*",
+          "PositionID": "string*",
+          "VacantClosingAssignmentFTE": "string*"
+        },
+        "operations": {
+          "Position_PositionDistributionList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Position/PositionDistribution"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Position_PositionDistributionSet": {
+        "key": "PositionDistributionSetID",
+        "parameters": {},
+        "resources": {
+          "PositionDistributionSetID": "string*",
+          "AccountDistribution": "string*",
+          "BudgetedFTE": "string*",
+          "EndDate": "string*",
+          "IsClosing": "string*",
+          "IsCurrent": "string*",
+          "PositionDistributionsAssignmentTypeCodeDescriptions": "string*",
+          "PositionDistributionsAssignmentTypeCodes": "string*",
+          "PositionDistributionsAssignmentTypeDescriptions": "string*",
+          "PositionDistributionsBuildingCodes": "string*",
+          "PositionDistributionsBuildingDescriptions": "string*",
+          "PositionDistributionsDepartmentCodes": "string*",
+          "PositionDistributionsDepartmentDescriptions": "string*",
+          "PositionDistributionsFTEGroupCodes": "string*",
+          "PositionDistributionsFTEGroupDescriptions": "string*",
+          "PositionID": "string*",
+          "StartDate": "string*"
+        },
+        "operations": {
+          "Position_PositionDistributionSetList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Position/PositionDistributionSet"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Position_PositionGroup": {
+        "key": "PositionGroupID",
+        "parameters": {},
+        "resources": {
+          "PositionGroupID": "string*",
+          "Code": "string*",
+          "CodeDescription": "string*",
+          "Description": "string*",
+          "DistrictID": "string*",
+          "FiscalYearID": "string*"
+        },
+        "operations": {
+          "Position_PositionGroupList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Position/PositionGroup"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Position_PositionNumber": {
+        "key": "PositionNumberID",
+        "parameters": {},
+        "resources": {
+          "PositionNumberID": "string*",
+          "Code": "string*",
+          "DistrictID": "string*",
+          "FullPositionNumber": "string*",
+          "HasActiveJobPosting": "string*",
+          "HasPositionInFiscalYear": "string*",
+          "IsActive": "string*"
+        },
+        "operations": {
+          "Position_PositionNumberList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Position/PositionNumber"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Position_PositionType": {
+        "key": "PositionTypeID",
+        "parameters": {},
+        "resources": {
+          "PositionTypeID": "string*",
+          "BudgetedFTE": "string*",
+          "CalendarID": "string*",
+          "ClosingAssignmentFTE": "string*",
+          "Code": "string*",
+          "CodeDescription": "string*",
+          "Description": "string*",
+          "DistrictID": "string*",
+          "FiscalYearID": "string*",
+          "FTEGroupID": "string*",
+          "PlanPositionDistributionsForPlanGroupFTE": "string*",
+          "StateReportingDistributionSummaryClosingAssignmentFTE": "string*",
+          "StateReportingDistributionSummaryCurrentFTE": "string*",
+          "StateReportingDistributionSummaryVacantClosingAssignmentFTE": "string*"
+        },
+        "operations": {
+          "Position_PositionTypeList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Position/PositionType"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Position_Step": {
+        "key": "StepID",
+        "parameters": {},
+        "resources": {
+          "StepID": "string*",
+          "Description": "string*",
+          "Increment": "string*",
+          "LaneIDOverride": "string*",
+          "MatrixIDOverride": "string*",
+          "MatrixLaneID": "string*",
+          "StepNumber": "string*"
+        },
+        "operations": {
+          "Position_StepList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Position/Step"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Scheduling_CourseType": {
+        "key": "CourseTypeID",
+        "parameters": {},
+        "resources": {
+          "CourseTypeID": "string*",
+          "Code": "string*",
+          "CodeDescription": "string*",
+          "Description": "string*",
+          "EntityID": "string*",
+          "SchoolYearID": "string*"
+        },
+        "operations": {
+          "Scheduling_CourseTypeList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Scheduling/CourseType"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Scheduling_Course": {
+        "key": "CourseID",
+        "parameters": {},
+        "resources": {
+          "CourseID": "string*",
+          "Category": "string*",
+          "CategoryCode": "string*",
+          "CodeDescription": "string*",
+          "CourseCode": "string*",
+          "CourseGroupDescriptions": "string*",
+          "CourseTypeID": "string*",
+          "DepartmentID": "string*",
+          "Description": "string*",
+          "EntityID": "string*",
+          "SchoolYearID": "string*",
+          "SubjectID": "string*"
+        },
+        "operations": {
+          "Scheduling_CourseList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Scheduling/Course"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Scheduling_Meet": {
+        "key": "MeetID",
+        "parameters": {},
+        "resources": {
+          "MeetID": "string*",
+          "EndDate": "string*",
+          "EntityID": "string*",
+          "RoomID": "string*",
+          "SchoolYearID": "string*",
+          "SectionID": "string*",
+          "StartDate": "string*",
+          "Type": "string*",
+          "TypeCode": "string*"
+        },
+        "operations": {
+          "Scheduling_MeetList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Scheduling/Meet"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Scheduling_MeetSummary": {
+        "key": "MeetSummaryID",
+        "parameters": {},
+        "resources": {
+          "MeetSummaryID": "string*",
+          "CalendarID": "string*",
+          "IsDefaultCalendar": "string*",
+          "IsPrimary": "string*",
+          "MeetID": "string*",
+          "Period": "string*"
+        },
+        "operations": {
+          "Scheduling_MeetSummaryList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Scheduling/MeetSummary"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Scheduling_SchedulingTeam": {
+        "key": "SchedulingTeamID",
+        "parameters": {},
+        "resources": {
+          "SchedulingTeamID": "string*",
+          "Code": "string*",
+          "CodeDescription": "string*",
+          "Description": "string*",
+          "EntityID": "string*",
+          "SchoolYearID": "string*"
+        },
+        "operations": {
+          "Scheduling_SchedulingTeamList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Scheduling/SchedulingTeam"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Scheduling_Section": {
+        "key": "SectionID",
+        "parameters": {},
+        "resources": {
+          "SectionID": "string*",
+          "Code": "string*",
+          "CourseCodeSectionCode": "string*",
+          "CourseCodeSectionCodeCourseDescription": "string*",
+          "CourseID": "string*",
+          "EffectiveTeacherFirstLastName": "string*",
+          "EffectiveTeacherLastFirstName": "string*",
+          "EntityCodeTeacherNumber": "string*",
+          "EntityID": "string*",
+          "HomeroomID": "string*",
+          "IsActive": "string*"
+        },
+        "operations": {
+          "Scheduling_SectionList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Scheduling/Section"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Scheduling_StaffMeet": {
+        "key": "StaffMeetID",
+        "parameters": {},
+        "resources": {
+          "StaffMeetID": "string*",
+          "HasGradebookAccess": "string*",
+          "IsPrimary": "string*",
+          "MeetID": "string*",
+          "SectionID": "string*",
+          "StaffID": "string*"
+        },
+        "operations": {
+          "Scheduling_StaffMeetList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Scheduling/StaffMeet"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Scheduling_StudentSection": {
+        "key": "StudentSectionID",
+        "parameters": {},
+        "resources": {
+          "StudentSectionID": "string*",
+          "EndDate": "string*",
+          "IsActiveAsOfDate": "string*",
+          "SectionID": "string*",
+          "StartDate": "string*",
+          "Status": "string*",
+          "StatusCode": "string*",
+          "StatusString": "string*",
+          "StudentID": "string*"
+        },
+        "operations": {
+          "Scheduling_StudentSectionList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Scheduling/StudentSection"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Security_AuthenticationRole": {
+        "key": "AuthenticationRoleID",
+        "parameters": {},
+        "resources": {
+          "AuthenticationRoleID": "string*",
+          "AllowSkywardCredentials": "string*",
+          "DisplayText": "string*",
+          "HasAuthenticationMethod": "string*",
+          "HasLDAPProvider": "string*",
+          "Name": "string*",
+          "Priority": "string*"
+        },
+        "operations": {
+          "Security_AuthenticationRoleList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Security/AuthenticationRole"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Security_User": {
+        "key": "UserID",
+        "parameters": {},
+        "resources": {
+          "AuthenticationRoleID": "string*",
+          "IsActive": "boolean",
+          "IsDeleted": "boolean",
+          "NameID": "string*",
+          "PasswordExpirationDate": "string*",
+          "UserID": "string*",
+          "Username": "string*"
+        },
+        "operations": {
+          "Security_UserList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Security/User"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          },
+          "Security_UserCreate": {
+            "method": "put",
+            "call": {
+              "mode": "normal",
+              "path": "/Custom/{entity_id}/Security/User?searchFields[0]=AuthenticationRoleID&searchFields[1]=DatabaseUsername&searchFields[2]=EntityIDCurrent&searchFields[3]=FullNameFL&searchFields[4]=IsActive&searchFields[5]=NameID&searchFields[6]=UserID&searchFields[7]=Username&searchFields[8]=UsesSkywardAuthentication"
+            },
+            "body": {
+              "DataObject": {
+                "_nim_merge_attributes_": true
+              }
+            },
+            "mergeOutput": true,
+            "semantics": "create",
+            "resource_allowance_default": "optional",
+            "resource_mandatory": [
+              "AuthenticationRoleID",
+              "IsActive",
+              "NameID",
+              "Username"
+            ]
+          }
+        }
+      },
+      "SkySys_State": {
+        "key": "StateID",
+        "parameters": {},
+        "resources": {
+          "StateID": "string*",
+          "Code": "string*",
+          "CountryCode": "string*",
+          "DisplayName": "string*"
+        },
+        "operations": {
+          "SkySys_StateList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/SkySys/State"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Staff_ConfigEntityGroupYear": {
+        "key": "ConfigEntityGroupYearID",
+        "parameters": {},
+        "resources": {
+          "ConfigEntityGroupYearID": "string*",
+          "AllowFoodServiceOnlinePaymentsAccessByDefault": "string*",
+          "EntityID": "string*",
+          "SchoolYearID": "string*"
+        },
+        "operations": {
+          "Staff_ConfigEntityGroupYearList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Staff/ConfigEntityGroupYear"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Staff_Department": {
+        "key": "DepartmentID",
+        "parameters": {},
+        "resources": {
+          "DepartmentID": "string*",
+          "Code": "string*",
+          "CodeDescription": "string*",
+          "Description": "string*",
+          "EntityID": "string*",
+          "SchoolYearID": "string*",
+          "StaffIDDepartmentHead": "string*"
+        },
+        "operations": {
+          "Staff_DepartmentList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Staff/Department"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Staff_Staff": {
+        "key": "StaffID",
+        "parameters": {},
+        "resources": {
+          "StaffID": "string*",
+          "DistrictID": "string*",
+          "GradeLevelLowerBound": "string*",
+          "GradeLevelUpperBound": "string*",
+          "HasDuplicateStaffNumber": "string*",
+          "IsActiveForDistrict": "string*",
+          "IsCurrentStaffEntityYear": "string*",
+          "NameID": "string*",
+          "StaffMeetCount": "string*",
+          "StaffNumber": "string*",
+          "StaffWebsite": "string*"
+        },
+        "operations": {
+          "Staff_StaffList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Staff/Staff"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          },
+          "Staff_StaffCreate": {
+            "method": "put",
+            "call": {
+              "mode": "normal",
+              "path": "/Custom/{entity_id}/Staff/Staff?searchFields[0]=StaffID"
+            },
+            "body": {
+              "DataObject": {
+                "_nim_merge_attributes_": true
+              }
+            },
+            "mergeOutput": true,
+            "semantics": "create",
+            "resource_allowance_default": "optional",
+            "resource_prohibited": [
+              "StaffID",
+              "ActiveStudentCount",
+              "CreatedTime",
+              "FamilyStudentAccessStaffNameToUse",
+              "FullNameFL",
+              "FullNameFML",
+              "FullNameLegalFL",
+              "FullNameLegalFML",
+              "FullNameLegalLFM",
+              "FullNameLFM",
+              "GradeLevelLowerBound",
+              "GradeLevelUpperBound",
+              "HasDuplicateStaffNumber",
+              "IsActiveForDistrict",
+              "IsCurrentStaffEntityYear",
+              "ModifiedTime",
+              "UserIDCreatedBy",
+              "UserIDModifiedBy"
+            ],
+            "resource_mandatory": [
+              "DistrictID",
+              "NameID",
+              "StaffNumber"
+            ]
+          }
+        }
+      },
+      "Staff_StaffDepartment": {
+        "key": "StaffDepartmentID",
+        "parameters": {},
+        "resources": {
+          "StaffDepartmentID": "string*",
+          "DepartmentID": "string*",
+          "IsDefaultDepartment": "string*",
+          "StaffID": "string*"
+        },
+        "operations": {
+          "Staff_StaffDepartmentList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Staff/StaffDepartment"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Staff_StaffEntityYear": {
+        "key": "StaffEntityYearID",
+        "parameters": {},
+        "resources": {
+          "StaffEntityYearID": "string*",
+          "EntityID": "string*",
+          "IsActive": "string*",
+          "IsCareerCenterCounselor": "string*",
+          "IsDisciplineOfficer": "string*",
+          "IsSubstituteTeacher": "string*",
+          "IsTeacher": "string*",
+          "RoomIDDefault": "string*",
+          "SchoolYearID": "string*",
+          "StaffDepartmentSummary": "string*",
+          "StaffID": "string*",
+          "TeacherNumber": "string*"
+        },
+        "operations": {
+          "Staff_StaffEntityYearList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Staff/StaffEntityYear"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          },
+          "Staff_StaffEntityYearCreate": {
+            "method": "put",
+            "call": {
+              "mode": "normal",
+              "path": "/Custom/{entity_id}/Staff/StaffEntityYear?searchFields[0]=StaffID&searchFields[1]=StaffEntityYearID"
+            },
+            "body": {
+              "DataObject": {
+                "_nim_merge_attributes_": true
+              }
+            },
+            "mergeOutput": true,
+            "semantics": "create",
+            "resource_allowance_default": "optional",
+            "resource_mandatory": [
+              "StaffID",
+              "EntityID",
+              "SchoolYearID"
+            ]
+          }
+        }
+      },
+      "Staff_StaffStaffType": {
+        "key": "StaffStaffTypeID",
+        "parameters": {},
+        "resources": {
+          "StaffStaffTypeID": "string*",
+          "EndDate": "string*",
+          "IsPrimary": "string*",
+          "PositionDescription": "string*",
+          "StaffID": "string*",
+          "StaffTypeID": "string*",
+          "StartDate": "string*"
+        },
+        "operations": {
+          "Staff_StaffStaffTypeList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Staff/StaffStaffType"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          },
+          "Staff_StaffStaffTypeCreate": {
+            "method": "put",
+            "call": {
+              "mode": "normal",
+              "path": "/Custom/{entity_id}/Staff/StaffStaffType?searchFields[0]=StaffID&searchFields[1]=StaffStaffTypeID"
+            },
+            "body": {
+              "DataObject": {
+                "_nim_merge_attributes_": true
+              }
+            },
+            "mergeOutput": true,
+            "semantics": "create",
+            "resource_allowance_default": "optional",
+            "resource_mandatory": [
+              "StaffID",
+              "StaffTypeID",
+              "StartDate"
+            ]
+          }
+        }
+      },
+      "Staff_StaffType": {
+        "key": "StaffTypeID",
+        "parameters": {},
+        "resources": {
+          "StaffTypeID": "string*",
+          "Code": "string*",
+          "CodeDescription": "string*",
+          "Description": "string*",
+          "DistrictID": "string*",
+          "SchoolYearID": "string*"
+        },
+        "operations": {
+          "Staff_StaffTypeList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Staff/StaffType"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "StateReporting_StateInternetAccess": {
+        "key": "StateInternetAccessID",
+        "parameters": {},
+        "resources": {
+          "StateInternetAccessID": "string*",
+          "Code": "string*",
+          "DisplayCode": "string*",
+          "IsInvalid": "string*",
+          "ValidYearHigh": "string*",
+          "ValidYearLow": "string*"
+        },
+        "operations": {
+          "StateReporting_StateInternetAccessList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/StateReporting/StateInternetAccess"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "StateReporting_StateInternetAccessType": {
+        "key": "StateInternetAccessTypeID",
+        "parameters": {},
+        "resources": {
+          "StateInternetAccessTypeID": "string*",
+          "Code": "string*",
+          "DisplayCode": "string*",
+          "IsInvalid": "string*",
+          "ValidYearHigh": "string*",
+          "ValidYearLow": "string*"
+        },
+        "operations": {
+          "StateReporting_StateInternetAccessTypeList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/StateReporting/StateInternetAccessType"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Student_InternetAccess": {
+        "key": "InternetAccessID",
+        "parameters": {},
+        "resources": {
+          "InternetAccessID": "string*",
+          "Code": "string*",
+          "DistrictID": "string*",
+          "SchoolYearID": "string*",
+          "StateInternetAccessID": "string*"
+        },
+        "operations": {
+          "Student_InternetAccessList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Student/InternetAccess"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Student_InternetAccessType": {
+        "key": "InternetAccessTypeID",
+        "parameters": {},
+        "resources": {
+          "InternetAccessTypeID": "string*",
+          "Code": "string*",
+          "DistrictID": "string*",
+          "SchoolYearID": "string*",
+          "StateInternetAccessTypeID": "string*"
+        },
+        "operations": {
+          "Student_InternetAccessTypeList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Student/InternetAccessType"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Student_StudentCustomCode": {
+        "key": "StudentCustomCodeID",
+        "parameters": {},
+        "resources": {
+          "StudentCustomCodeID": "string*",
+          "CustomCodeID": "string*",
+          "StudentID": "string*"
+        },
+        "operations": {
+          "Student_StudentCustomCodeList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Student/StudentCustomCode"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Student_Student": {
+        "key": "StudentID",
+        "parameters": {},
+        "resources": {
+          "StudentID": "string*",
+          "CalculatedEntityYearIsActive": "string*",
+          "CalculatedGrade": "string*",
+          "CalculatedGradYear": "string*",
+          "CalculatedLocation": "string*",
+          "CalculatedPrimaryFormattedPhoneNumber": "string*",
+          "CurrentDefaultEntityIsActive": "string*",
+          "DateOfFirstEntryWithdrawalInEntity": "string*",
+          "DentalPolicyNumber": "string*",
+          "EarliestDistrictEnrollmentDate": "string*",
+          "FirstName": "string*",
+          "Grade": "string*",
+          "GradeNumeric": "string*",
+          "GraduationDate": "string*",
+          "GraduationRequirementYear": "string*",
+          "GradYear": "string*",
+          "IsActiveAsOfDate": "string*",
+          "IsCurrentActive": "string*",
+          "IsCurrentActiveDefaultEnrollment": "string*",
+          "IsGraduated": "string*",
+          "LastName": "string*",
+          "Location": "string*",
+          "LocationEntityID": "string*",
+          "LocationSchoolYearID": "string*",
+          "MaskedStudentNumber": "string*",
+          "MiddleName": "string*",
+          "NameID": "string*",
+          "StudentNumber": "string*"
+        },
+        "operations": {
+          "Student_StudentList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Student/Student"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      }
+    }
+  },
+  "rest": {
+    "config": {
+      "baseUrl": "https://{tenant_id}",
+      "sslLegacyProtocols": true,
+      "get": {
+        "maxPageCount": 500,
+        "query_parameters": {
+          "SchoolYearID": "{school_year_id}",
+          "FiscalYearId": "{fiscal_year_id}"
+        },
+        "pagination": {
+          "mode": "url",
+          "field": "Paging.Next",
+          "page_size": "{page_size}"
+        },
+        "selector": {
+          "mode": "array",
+          "array": "searchFields"
+        }
+      },
+      "authentication": "client_credentials",
+      "call_handling": "generic",
+      "test_connection": {
+        "url": "/Custom/GetSystemMetadata"
+      },
+      "headers": {
+        "Suppress-Development-Permissions": true
+      },
+      "socket_timeout": 3600000
+    },
+    "authOptions": {
+      "authUrl": "https://skyward-api.global.cloud.nimsuite.com/{integration_key}/oauth/token",
+      "directToken": true
+    }
+  },
+  "connection": {
+    "items": [
+      {
+        "name": "integration_key",
+        "type": "textbox",
+        "label": "Integration Key:",
+        "value": ""
+      },
+      {
+        "name": "entity_id",
+        "type": "textbox",
+        "label": "Entity ID:",
+        "value": ""
+      },
+      {
+        "name": "school_year_id",
+        "type": "textbox",
+        "label": "School Year ID:",
+        "value": ""
+      },
+      {
+        "name": "fiscal_year_id",
+        "type": "textbox",
+        "label": "Fiscal Year ID:",
+        "value": ""
+      },
+      {
+        "name": "page_size",
+        "type": "textbox",
+        "label": "Page Size:",
+        "value": "100"
+      }
+    ]
+  }
+}
