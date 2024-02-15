@@ -443,6 +443,7 @@
       <Field Name="MiddleName" SkywardID="c263a65c-3582-09d6-3326-a651fd2b83ff" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
       <Field Name="NameID" SkywardID="6e46602f-0d03-06b5-043c-77ad190037d5" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
       <Field Name="StudentNumber" SkywardID="760d0754-2452-0d0f-06f3-49a52f10a88c" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
+      <Field Name="UniqueIdentificationCode" SkywardID="7d193c76-5473-0271-3f7d-34008a2c9c30" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="true" />
     </Fields>
     <Relationships />
   </Object>
