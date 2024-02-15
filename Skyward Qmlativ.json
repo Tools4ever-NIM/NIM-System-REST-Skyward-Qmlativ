@@ -2821,7 +2821,8 @@
           "MaskedStudentNumber": "string*",
           "MiddleName": "string*",
           "NameID": "string*",
-          "StudentNumber": "string*"
+          "StudentNumber": "string*",
+		  "UniqueIdentificationCode": "string*"
         },
         "operations": {
           "Student_StudentList": {
