@@ -2822,7 +2822,7 @@
           "MiddleName": "string*",
           "NameID": "string*",
           "StudentNumber": "string*",
-		  "UniqueIdentificationCode": "string*"
+		  "CalculatedStudentStateID": "string*"
         },
         "operations": {
           "Student_StudentList": {
