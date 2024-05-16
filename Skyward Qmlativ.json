@@ -241,7 +241,8 @@
           "NameID": "string*",
           "NameSuffixID": "string*",
           "NameTitleID": "string*",
-          "Rank": "string*"
+          "Rank": "string*",
+          "IsLegalName": "boolean*"
         },
         "operations": {
           "Demographics_NameAliasList": {
@@ -440,16 +441,41 @@
           "NameID": "string*",
           "Age": "string*",
           "BirthDate": "string*",
+          "BirthMonth": "string",
+          "BirthMonthDay": "string",
+          "BirthYear": "string",
           "CalculatedPrimaryFormattedPhoneNumber": "string*",
           "Ethnicity": "string*",
           "EthnicityAndRace": "string*",
           "ExternalUniqueIdentifier": "string*",
+          "FirstInitial": "string",
+          "FirstInitialLastName": "string",
+          "FirstInitialLastNameLegal": "string",
+          "FirstInitialLegal": "string",
           "FirstName": "string*",
           "FirstNameLegal": "string*",
+          "FullNameFL": "string",
+          "FullNameFMIL": "string",
+          "FullNameLegalFL": "string",
+          "FullNameLegalFML": "string",
+          "FullNameLegalLFM": "string",
+          "FullNameLF": "string",
+          "FullNameLFM": "string",
           "Gender": "string*",
           "GenderCode": "string*",
           "GenderDescription": "string*",
           "GenderIdentityID": "string*",
+          "Initials": "string",
+          "InitialsLegal": "string",
+          "IsCurrentStudent": "string",
+          "IsEmployeeName": "string",
+          "IsEmployeeNameForDistrict": "string",
+          "IsGuardianName": "string",
+          "IsStudentName": "string",
+          "LastInitial": "string",
+          "LastInitialLegal": "string",
+          "MiddleInitial": "string",
+          "MiddleInitialLegal": "string",
           "LastName": "string*",
           "LastNameLegal": "string*",
           "MaritalStatus": "string*",
@@ -724,7 +750,9 @@
           "PhoneNumber": "string*",
           "PhoneNumberIsInternational": "string*",
           "StaffIDSuperintendent": "string*",
-          "StateDistrictCode": "string*"
+          "StateDistrictCode": "string*",
+          "DistrictCodeBySchoolYear": "string",
+          "DistrictGroupID": "string"
         },
         "operations": {
           "District_DistrictList": {
@@ -1361,13 +1389,16 @@
         "parameters": {},
         "resources": {
           "StudentEntityYearID": "string*",
+          "ChromebookDocumentsReturned": "string",
           "CurrentPercentEnrolled": "string*",
           "EntityID": "string*",
           "Grade": "string*",
+          "HandbookSigned": "string",
           "HomeroomID": "string*",
           "IsActive": "string*",
           "IsDefaultEntity": "string*",
           "NameID": "string*",
+          "OptOutOfMedia": "string",
           "SchedulingTeamID": "string*",
           "SchoolYearID": "string*",
           "SignedAcceptableUsePolicy": "string*",
@@ -1880,6 +1911,55 @@
           }
         }
       },
+      "Position_OrganizationChart": {
+        "key": "OrganizationChartID",
+        "parameters": {},
+        "resources": {
+          "OrganizationChartID": "string*",
+          "Code": "string*",
+          "CodeDescription": "string*",
+          "Description": "string*",
+          "DistrictID": "string*",
+          "FiscalYearID": "string*"
+        },
+        "operations": {
+          "Position_OrganizationChartList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Position/OrganizationChart"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Position_OrganizationChartApprover": {
+        "key": "OrganizationChartRelationshipIDSupervisor",
+        "parameters": {},
+        "resources": {
+          "OrganizationChartRelationshipIDSupervisor": "string*",
+          "IsFinalApproval": "boolean*",
+          "LevelsBelowSupervisor": "string*",
+          "OrganizationChartID": "string*",
+          "PositionDistributionID": "string*",
+          "PositionIDEmployee": "string*",
+          "PositionIDSupervisor": "string*"
+        },
+        "operations": {
+          "Position_OrganizationChartApproverList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Position/OrganizationChartApprover"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
       "Position_Placement": {
         "key": "PlacementID",
         "parameters": {},
@@ -2154,6 +2234,10 @@
           "DepartmentID": "string*",
           "Description": "string*",
           "EntityID": "string*",
+          "IsActive": "boolean*",
+          "IsAHistoricRecord": "boolean",
+          "IsCoreAcademic": "boolean",
+          "IsCurrentSchoolYear": "boolean*",
           "SchoolYearID": "string*",
           "SubjectID": "string*"
         },
@@ -2177,9 +2261,11 @@
           "MeetID": "string*",
           "EndDate": "string*",
           "EntityID": "string*",
+          "IsPrimary": "boolean*",
           "RoomID": "string*",
           "SchoolYearID": "string*",
           "SectionID": "string*",
+          "StaffNames": "string",
           "StartDate": "string*",
           "Type": "string*",
           "TypeCode": "string*"
@@ -2203,6 +2289,7 @@
         "resources": {
           "MeetSummaryID": "string*",
           "CalendarID": "string*",
+          "Days": "string*",
           "IsDefaultCalendar": "string*",
           "IsPrimary": "string*",
           "MeetID": "string*",
@@ -2298,12 +2385,38 @@
           }
         }
       },
+      "Scheduling_StaffStudent": {
+        "key": "StaffID",
+        "parameters": {},
+        "resources": {
+          "StudentID": "string*",
+          "EntityID": "string*",
+          "SchoolYearID": "string*",
+          "StaffID": "string*",
+          "StudentStatus": "string*",
+          "StudentStatusCode": "string*"
+        },
+        "operations": {
+          "Scheduling_StaffStudentList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Scheduling/StaffStudent"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
       "Scheduling_StudentSection": {
         "key": "StudentSectionID",
         "parameters": {},
         "resources": {
           "StudentSectionID": "string*",
           "EndDate": "string*",
+          "EnrollmentStatus": "string*",
+          "EnrollmentStatusCode": "string*",
           "IsActiveAsOfDate": "string*",
           "SectionID": "string*",
           "StartDate": "string*",
@@ -2318,6 +2431,32 @@
             "query_parameters": {},
             "call": {
               "path": "/Custom/{entity_id}/Scheduling/StudentSection"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Scheduling_StudentSectionMeetSummary": {
+        "key": "MeetSummaryID",
+        "parameters": {},
+        "resources": {
+          "StudentSectionID": "string*",
+          "CalendarID": "string*",
+          "CalculatedEndDate": "string*",
+          "CalculatedStartDate": "string*",
+          "EndDate": "string*",
+          "MeetSummaryID": "string*",
+          "StartDate": "string*",
+          "StudentID": "string*"
+        },
+        "operations": {
+          "Scheduling_StudentSectionMeetSummaryList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Scheduling/StudentSectionMeetSummary"
             },
             "processing_options": {
               "output_field": "Objects"
@@ -2650,7 +2789,7 @@
             ]
           }
         }
-      },
+      },    
       "Staff_StaffType": {
         "key": "StaffTypeID",
         "parameters": {},
@@ -2821,7 +2960,8 @@
           "MaskedStudentNumber": "string*",
           "MiddleName": "string*",
           "NameID": "string*",
-          "StudentNumber": "string*"
+          "StudentNumber": "string*",
+		  "CalculatedStudentStateID": "string*"
         },
         "operations": {
           "Student_StudentList": {
