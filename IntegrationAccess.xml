@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Config>
   <Object Module="Demographics" Name="Name" SkywardID="3f8bf609-6482-4902-b7f6-5a1ae4b1aa32" IsDeleteAllowed="true">
     <Fields>
@@ -478,7 +478,7 @@
       <Field Name="MiddleName" SkywardID="c263a65c-3582-09d6-3326-a651fd2b83ff" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
       <Field Name="NameID" SkywardID="6e46602f-0d03-06b5-043c-77ad190037d5" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
       <Field Name="StudentNumber" SkywardID="760d0754-2452-0d0f-06f3-49a52f10a88c" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
-	  <Field Name="CalculatedStudentStateID" SkywardID="4e2334db-9828-02d4-39b2-19cae5ac15af" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="true" />
+      <Field Name="CalculatedStudentStateID" SkywardID="4e2334db-9828-02d4-39b2-19cae5ac15af" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="true" />
     </Fields>
     <Relationships />
   </Object>
@@ -1416,6 +1416,24 @@
       <Field Name="PositionDistributionID" SkywardID="0bd9752a-5e12-05a4-2bfe-750252e1b0bc" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
       <Field Name="PositionIDEmployee" SkywardID="120a0db1-0c67-0111-0d84-d1faec90b180" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
       <Field Name="PositionIDSupervisor" SkywardID="0c7ec7dd-be4d-047a-013f-ccc54d16460a" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
+    </Fields>
+    <Relationships />
+  </Object>
+  <Object Module="Security" Name="Group" SkywardID="fd157c8d-85fb-444b-a2fd-845e2b5a15ba" IsDeleteAllowed="false">
+    <Fields>
+      <Field Name="GroupID" SkywardID="33332ad9-d3b4-0cc3-3d7b-33e1a947a20c" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
+      <Field Name="Description" SkywardID="bbebc0fa-a94d-0238-18a3-72e0cdd5e38a" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
+      <Field Name="IsActive" SkywardID="69f2e79e-1ea1-0865-07b3-03e1ace528ae" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
+      <Field Name="Name" SkywardID="937410da-1be9-09cc-1ef9-144443ef150f" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
+    </Fields>
+    <Relationships />
+  </Object>
+  <Object Module="Security" Name="GroupMembership" SkywardID="4fe0a0a1-c5e0-4f71-b2d2-2d0a43dbd216" IsDeleteAllowed="false">
+    <Fields>
+      <Field Name="GroupMembershipID" SkywardID="63f3ef34-91d4-00b4-144c-6038285c9f65" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
+      <Field Name="EntityID" SkywardID="62954f8c-d621-034f-1eda-405852dab0a2" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
+      <Field Name="GroupIDParent" SkywardID="50d577f8-f0f6-0b58-1e1b-6b3fe7f47e34" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
+      <Field Name="UserIDMember" SkywardID="48732e08-85fe-0721-1489-76ea08630241" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
     </Fields>
     <Relationships />
   </Object>
