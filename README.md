@@ -88,6 +88,8 @@
 - Scheduling StaffMeet
 - Scheduling StudentSection
 - Security AuthenticationRole
+- Security Groups
+- Security Group Memberships
 - Security User
 - SkySys State
 - Staff ConfigEntityGroupYear
