@@ -2489,6 +2489,50 @@
           }
         }
       },
+      "Security_Group": {
+        "key": "GroupID",
+        "parameters": {},
+        "resources": {
+          "GroupID": "string*",
+          "IsActive": "boolean",
+          "Description": "string*",
+          "Name": "string*"
+        },
+        "operations": {
+          "Security_UserList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Security/Group"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "Security_GroupMembership": {
+        "key": "GroupMembershipID",
+        "parameters": {},
+        "resources": {
+          "GroupMembershipID": "string*",
+          "EntityID": "string*",
+          "GroupIDParent": "string*",
+          "UserIDMember": "string*"
+        },
+        "operations": {
+          "Security_UserList": {
+            "method": "get",
+            "query_parameters": {},
+            "call": {
+              "path": "/Custom/{entity_id}/Security/GroupMembership"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
       "Security_User": {
         "key": "UserID",
         "parameters": {},
@@ -3043,7 +3087,7 @@
         "name": "page_size",
         "type": "textbox",
         "label": "Page Size:",
-        "value": "100"
+        "value": "10000"
       }
     ]
   }
