@@ -292,6 +292,7 @@
                 "_nim_merge_attributes_": true
               }
             },
+            "removeBlankFields": true,
             "mergeOutput": true,
             "semantics": "create",
             "resource_allowance_default": "optional",
@@ -311,11 +312,20 @@
             "query_parameters": {},
             "body": {
               "DataObject": {
-                "_nim_merge_attributes_": true
+                "_nim_merge_attributes_": false,
+                "EmailAddress": "{EmailAddress}",
+                "EmailTypeID": "{EmailTypeID}",
+                "NameID": "{NameID}",
+                "Note": "{Note}",
+                "Rank": "{Rank}"
               }
             },
+            "removeBlankFields": true,
             "semantics": "update",
             "resource_allowance_default": "optional",
+            "resource_prohibited" : [
+              "EmailConfirmed"
+            ],
             "resource_mandatory": [
               "NameEmailID"
             ]
