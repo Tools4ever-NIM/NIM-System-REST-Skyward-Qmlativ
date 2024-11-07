@@ -2657,6 +2657,26 @@
             "processing_options": {
               "output_field": "Objects"
             }
+          },
+		  "Security_GroupMembershipCreate": {  
+            "method": "put",
+            "call": {
+                "mode": "normal",
+                "path": "/Custom/{EntityID}/Security/GroupMembership?searchFields[0]=GroupMembershipID&searchFields[1]=EntityID&searchFields[2]=GroupIDParent&searchFields[3]=UserIDMember&searchFields[4]=GroupIDParent"
+            },
+            "body":{
+              "DataObject":{
+                "_nim_merge_attributes_": true
+              }
+            },
+            "mergeOutput": true,
+            "semantics": "create",
+            "resource_allowance_default": "optional",
+            "resource_mandatory": [
+                "EntityID",
+                "GroupIDParent",
+                "UserIDMember"
+            ]
           }
         }
       },
@@ -2687,7 +2707,7 @@
             "method": "put",
             "call": {
               "mode": "normal",
-              "path": "/Custom/{entity_id}/Security/User?searchFields[0]=AuthenticationRoleID&searchFields[1]=DatabaseUsername&searchFields[2]=EntityIDCurrent&searchFields[3]=FullNameFL&searchFields[4]=IsActive&searchFields[5]=NameID&searchFields[6]=UserID&searchFields[7]=Username&searchFields[8]=UsesSkywardAuthentication"
+              "path": "/Custom/{system_entityid}/Security/User?searchFields[0]=AuthenticationRoleID&searchFields[1]=IsActive&searchFields[2]=NameID&searchFields[3]=UserID&searchFields[4]=Username"
             },
             "body": {
               "DataObject": {
