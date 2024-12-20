@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Config>
   <Object Module="Demographics" Name="Name" SkywardID="3f8bf609-6482-4902-b7f6-5a1ae4b1aa32" IsDeleteAllowed="true">
     <Fields>
@@ -187,13 +187,13 @@
       <Field Name="CampusID" SkywardID="2a4e1046-56df-091a-311f-69ae29b20de5" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
       <Field Name="Code" SkywardID="c70b380d-9457-088b-10eb-b8c4067bf91f" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
       <Field Name="CodeName" SkywardID="ed7f3707-ea3f-0e85-162c-be692e0e4f6f" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
+      <Field Name="DistrictCodeEntityCode" SkywardID="8459a0bf-47f2-0d38-0ae9-17249623de4c" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
       <Field Name="DistrictID" SkywardID="986eddf9-6b34-0f25-3afe-70cc3bd5d3db" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
       <Field Name="IsCurrentlySelected" SkywardID="22aa92e3-e6b6-0cc1-1d3d-bd2612c4e81b" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
       <Field Name="IsDistrictWide" SkywardID="ddfecad0-ab46-0b14-2b5a-74d37e2319e9" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
       <Field Name="IsSystemWide" SkywardID="de4dcf78-7a1a-0dd1-1528-1ee0399cf257" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
       <Field Name="Name" SkywardID="85f36fe9-f0b1-0047-1e52-28b3a1db10c4" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
       <Field Name="SchoolYearIDCurrent" SkywardID="08d2843f-e659-01dc-2507-d46646af70fc" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
-      <Field Name="DistrictCodeEntityCode" SkywardID="8459a0bf-47f2-0d38-0ae9-17249623de4c" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
     </Fields>
     <Relationships />
   </Object>
@@ -493,6 +493,7 @@
   <Object Module="Security" Name="User" SkywardID="67b98700-3fa9-44d2-8e0f-59a283b05663" IsDeleteAllowed="false">
     <Fields>
       <Field Name="UserID" SkywardID="5a75d1d0-7999-085d-0b6b-e83976e993e5" IsReadAllowed="true" IsCreateAllowed="true" IsUpdateAllowed="false" />
+      <Field Name="AccessCode" SkywardID="bf5794eb-523b-0749-273d-b69379ce0d24" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
       <Field Name="AuthenticationRoleID" SkywardID="7b31c4c7-762c-039e-3a8f-d2f8cced72db" IsReadAllowed="true" IsCreateAllowed="true" IsUpdateAllowed="false" />
       <Field Name="IsActive" SkywardID="2c3c1bce-68c8-02cd-3274-7f883c2126d6" IsReadAllowed="true" IsCreateAllowed="true" IsUpdateAllowed="false" />
       <Field Name="IsDeleted" SkywardID="2d3f266e-0826-0a26-1e65-926aff2375a3" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
