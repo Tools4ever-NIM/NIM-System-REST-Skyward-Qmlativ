@@ -3313,31 +3313,57 @@
         "name": "integration_key",
         "type": "textbox",
         "label": "Integration Key:",
-        "value": ""
+        "value": "",
+        "tooltip": "Required, This integration key comes from Tools4ever and provides access to the integration configured in Skyward. Please reach out to Tools4ever Support for this key.",
+        "order": 31
       },
       {
         "name": "entity_id",
         "type": "textbox",
         "label": "Entity ID:",
-        "value": ""
-      },
-      {
-        "name": "school_year_id",
-        "type": "textbox",
-        "label": "School Year ID:",
-        "value": ""
-      },
-      {
-        "name": "fiscal_year_id",
-        "type": "textbox",
-        "label": "Fiscal Year ID:",
-        "value": ""
+        "value": "1",
+        "tooltip": "Required, This is the targeted System Entity for the API Requests", 
+        "order": 32
       },
       {
         "name": "page_size",
         "type": "textbox",
         "label": "Page Size:",
-        "value": "10000"
+        "value": "10000",
+        "tooltip": "Size of each response back from the API. It's recommended to not go higher than 10000.",
+        "order": 300
+      },
+      {
+        "type": "text",
+        "label": "",
+        "name": "header_data",
+        "text": "",
+        "order": 301
+      },
+      {
+        "type": "text",
+        "label": "Data Options",
+        "name": "header_data",
+        "text": "",
+        "order": 302
+      },
+      {
+        "name": "school_year_id",
+        "type": "textbox",
+        "label": "School Year ID:",
+        "value": "",
+        "tooltip": "Optional, Limit the enrollment information to a specific School Year. Reference the District_SchoolYear table for a specific ID",
+        "order": 303,
+        "label_indent": true
+      },
+      {
+        "name": "fiscal_year_id",
+        "type": "textbox",
+        "label": "Fiscal Year ID:",
+        "value": "",
+        "tooltip": "Optional, Limit the employment information to a specific Fiscal Year. Reference the District_FiscalYear table for a specific ID",
+        "order": 304,
+        "label_indent": true
       }
     ]
   },
