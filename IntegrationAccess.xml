@@ -1414,6 +1414,7 @@
       <Field Name="IsFinalApproval" SkywardID="82479b77-e558-0145-0e5a-9cbc300acde2" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
       <Field Name="LevelsBelowSupervisor" SkywardID="1ea52f93-f784-0dd2-17fa-bc969066a0bf" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
       <Field Name="OrganizationChartID" SkywardID="35c979c4-f422-0f38-3473-e98b04b5338a" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
+      <Field Name="OrganizationChartRelationshipIDEmployee" SkywardID="01a7ae0b-f51c-0af2-202d-24a3432ecb8b" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
       <Field Name="PositionDistributionID" SkywardID="0bd9752a-5e12-05a4-2bfe-750252e1b0bc" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
       <Field Name="PositionIDEmployee" SkywardID="120a0db1-0c67-0111-0d84-d1faec90b180" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
       <Field Name="PositionIDSupervisor" SkywardID="0c7ec7dd-be4d-047a-013f-ccc54d16460a" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
@@ -1435,6 +1436,20 @@
       <Field Name="EntityID" SkywardID="62954f8c-d621-034f-1eda-405852dab0a2" IsReadAllowed="true" IsCreateAllowed="true" IsUpdateAllowed="false" />
       <Field Name="GroupIDParent" SkywardID="50d577f8-f0f6-0b58-1e1b-6b3fe7f47e34" IsReadAllowed="true" IsCreateAllowed="true" IsUpdateAllowed="false" />
       <Field Name="UserIDMember" SkywardID="48732e08-85fe-0721-1489-76ea08630241" IsReadAllowed="true" IsCreateAllowed="true" IsUpdateAllowed="false" />
+    </Fields>
+    <Relationships />
+  </Object>
+  <Object Module="Attendance" Name="Calendar" SkywardID="debac9c3-8126-4ff3-8e8f-08f99381f97a" IsDeleteAllowed="false">
+    <Fields>
+      <Field Name="CalendarID" SkywardID="e1ac8dbe-862c-0a95-1b06-4bee8462859f" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
+      <Field Name="Code" SkywardID="18956b7e-c223-0102-207e-59ac8c8ab00c" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
+      <Field Name="CodeDescription" SkywardID="fd353329-2dc6-0161-0f6f-a131b059d6cf" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
+      <Field Name="Description" SkywardID="69c36cb3-b2ba-0aba-36a1-7f266126be72" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
+      <Field Name="EndDate" SkywardID="6c179aac-71dd-0441-3a57-81a9745d63ac" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
+      <Field Name="EntityID" SkywardID="8abaa56a-2119-0773-372d-fe36b1f1dbf0" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
+      <Field Name="IsDefault" SkywardID="2189be30-22e5-0a70-2be7-424805c02c86" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
+      <Field Name="SchoolYearID" SkywardID="ad669ccc-ed29-0d20-3640-fe85fb8ce82f" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
+      <Field Name="StartDate" SkywardID="35f76634-82c4-01e4-39c7-f7896e080622" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
     </Fields>
     <Relationships />
   </Object>
