@@ -1453,4 +1453,27 @@
     </Fields>
     <Relationships />
   </Object>
+  <Object Module="Payroll" Name="AssignmentPayType" SkywardID="3446cbf7-ff1a-436b-918c-96d45291adef" IsDeleteAllowed="false">
+    <Fields>
+      <Field Name="AssignmentPayTypeID" SkywardID="ac872445-de99-0175-1f58-a8741f3c756e" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
+      <Field Name="AssignmentID" SkywardID="ad8a724d-892b-0f8d-10b0-ed2fd5f9de2a" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
+      <Field Name="IsActive" SkywardID="6e587015-6dff-0dd4-1223-7b159db5c1bf" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
+      <Field Name="IsFullPaySchedule" SkywardID="078c5bf5-32d7-023e-2783-68964d1de749" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
+      <Field Name="IsPrimary" SkywardID="f3a64788-9b5a-07fb-0598-af20a5215157" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
+      <Field Name="IsVerified" SkywardID="0c0cfe77-a011-04af-2427-96e4fe7dedee" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
+      <Field Name="PayScheduleID" SkywardID="a5d9a8cb-bbbf-0533-3d98-63330f8a2da4" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
+      <Field Name="PayTypeID" SkywardID="674ac263-1d60-0f24-3a70-d6a609ac3d90" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
+    </Fields>
+    <Relationships />
+  </Object>
+  <Object Module="Payroll" Name="PayType" SkywardID="445d468b-555f-4beb-90ed-f118e4d3f93b" IsDeleteAllowed="false">
+    <Fields>
+      <Field Name="PayTypeID" SkywardID="e5c9cc68-8d16-0910-10b2-d1c6bd195237" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
+      <Field Name="Code" SkywardID="8f0d7a4c-d488-074d-02ed-edb30bff3c02" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
+      <Field Name="CodeDescription" SkywardID="b26defba-fc59-013a-3a97-ee424d4fe7df" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
+      <Field Name="Description" SkywardID="1827a185-7541-031d-11f6-0bd2cf04b460" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
+      <Field Name="FiscalYearID" SkywardID="d0ddf1b5-2edf-07c6-3edc-87e86bb25a6c" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
+    </Fields>
+    <Relationships />
+  </Object>
 </Config>
