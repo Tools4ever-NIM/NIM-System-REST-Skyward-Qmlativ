@@ -529,6 +529,7 @@
                     "BirthMonthDay": "string",
                     "BirthYear": "string",
                     "CalculatedPrimaryFormattedPhoneNumber": "string*",
+                    "ConversionKey": "string*",
                     "Ethnicity": "string*",
                     "EthnicityAndRace": "string*",
                     "ExternalUniqueIdentifier": "string*",
