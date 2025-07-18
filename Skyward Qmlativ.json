@@ -13,7 +13,6 @@
                     "Metadata_SystemList": {
                         "method": "get",
                         "pagination": "none",
-                        "query_parameters": {},
                         "call": {
                             "path": "/Custom/GetSystemMetadata"
                         },
@@ -55,7 +54,6 @@
                     "MetadataList": {
                         "method": "get",
                         "pagination": "none",
-                        "query_parameters": {},
                         "call": {
                             "path": "/Custom/GetSystemMetadata"
                         },
@@ -83,7 +81,7 @@
                         "method": "get",
                         "call": {
                             "path": "/Custom/{entity_id}/Attendance/Calendar",
-                            "query_parameters": {
+                            "queryParameters": {
                                 "SchoolYearID": "{school_year_id}"
                             }
                         },
@@ -106,11 +104,12 @@
                 "operations": {
                     "Curriculum_SubjectList": {
                         "method": "get",
-                        "query_parameters": {
-                            "SchoolYearID": "{school_year_id}"
-                        },
+                        
                         "call": {
-                            "path": "/Custom/{entity_id}/Curriculum/Subject"
+                            "path": "/Custom/{entity_id}/Curriculum/Subject",
+                            "queryParameters": {
+                                "SchoolYearID": "{school_year_id}"
+                            }
                         },
                         "processing_options": {
                             "output_field": "Objects"
@@ -148,7 +147,6 @@
                 "operations": {
                     "Demographics_AddressList": {
                         "method": "get",
-                        "query_parameters": {},
                         "call": {
                             "path": "/Custom/{entity_id}/Demographics/Address"
                         },
@@ -167,7 +165,6 @@
                 "operations": {
                     "Demographics_CountryList": {
                         "method": "get",
-                        "query_parameters": {},
                         "call": {
                             "path": "/Custom/{entity_id}/Demographics/Country"
                         },
@@ -187,7 +184,6 @@
                 "operations": {
                     "Demographics_CountyList": {
                         "method": "get",
-                        "query_parameters": {},
                         "call": {
                             "path": "/Custom/{entity_id}/Demographics/County"
                         },
@@ -208,7 +204,6 @@
                 "operations": {
                     "Demographics_DirectionalList": {
                         "method": "get",
-                        "query_parameters": {},
                         "call": {
                             "path": "/Custom/{entity_id}/Demographics/Directional"
                         },
@@ -229,7 +224,6 @@
                 "operations": {
                     "Demographics_EmailTypeList": {
                         "method": "get",
-                        "query_parameters": {},
                         "call": {
                             "path": "/Custom/{entity_id}/Demographics/EmailType"
                         },
@@ -250,7 +244,6 @@
                 "operations": {
                     "Demographics_GenderIdentityList": {
                         "method": "get",
-                        "query_parameters": {},
                         "call": {
                             "path": "/Custom/{entity_id}/Demographics/GenderIdentity"
                         },
@@ -273,7 +266,6 @@
                 "operations": {
                     "Demographics_LanguageList": {
                         "method": "get",
-                        "query_parameters": {},
                         "call": {
                             "path": "/Custom/{entity_id}/Demographics/Language"
                         },
@@ -303,7 +295,6 @@
                 "operations": {
                     "Demographics_NameAddressList": {
                         "method": "get",
-                        "query_parameters": {},
                         "call": {
                             "path": "/Custom/{entity_id}/Demographics/NameAddress"
                         },
@@ -330,7 +321,6 @@
                 "operations": {
                     "Demographics_NameAliasList": {
                         "method": "get",
-                        "query_parameters": {},
                         "call": {
                             "path": "/Custom/{entity_id}/Demographics/NameAlias"
                         },
@@ -354,7 +344,6 @@
                 "operations": {
                     "Demographics_NameEmailList": {
                         "method": "get",
-                        "query_parameters": {},
                         "call": {
                             "path": "/Custom/{entity_id}/Demographics/NameEmail"
                         },
@@ -446,7 +435,6 @@
                 "operations": {
                     "Demographics_NamePhoneList": {
                         "method": "get",
-                        "query_parameters": {},
                         "call": {
                             "path": "/Custom/{entity_id}/Demographics/NamePhone"
                         },
@@ -488,7 +476,6 @@
                 "operations": {
                     "Demographics_NameSuffixList": {
                         "method": "get",
-                        "query_parameters": {},
                         "call": {
                             "path": "/Custom/{entity_id}/Demographics/NameSuffix"
                         },
@@ -509,7 +496,6 @@
                 "operations": {
                     "Demographics_NameTitleList": {
                         "method": "get",
-                        "query_parameters": {},
                         "call": {
                             "path": "/Custom/{entity_id}/Demographics/NameTitle"
                         },
@@ -580,7 +566,6 @@
                 "operations": {
                     "Demographics_NameList": {
                         "method": "get",
-                        "query_parameters": {},
                         "call": {
                             "path": "/Custom/{entity_id}/Demographics/Name"
                         },
@@ -621,7 +606,6 @@
                 "operations": {
                     "Demographics_OccupationList": {
                         "method": "get",
-                        "query_parameters": {},
                         "call": {
                             "path": "/Custom/{entity_id}/Demographics/Occupation"
                         },
@@ -642,7 +626,6 @@
                 "operations": {
                     "Demographics_PhoneTypeList": {
                         "method": "get",
-                        "query_parameters": {},
                         "call": {
                             "path": "/Custom/{entity_id}/Demographics/PhoneType"
                         },
@@ -666,7 +649,6 @@
                 "operations": {
                     "Demographics_RelationshipList": {
                         "method": "get",
-                        "query_parameters": {},
                         "call": {
                             "path": "/Custom/{entity_id}/Demographics/Relationship"
                         },
@@ -689,7 +671,6 @@
                 "operations": {
                     "Demographics_StreetList": {
                         "method": "get",
-                        "query_parameters": {},
                         "call": {
                             "path": "/Custom/{entity_id}/Demographics/Street"
                         },
@@ -717,7 +698,6 @@
                 "operations": {
                     "Demographics_ZipList": {
                         "method": "get",
-                        "query_parameters": {},
                         "call": {
                             "path": "/Custom/{entity_id}/Demographics/Zip"
                         },
@@ -740,7 +720,6 @@
                 "operations": {
                     "District_BuildingList": {
                         "method": "get",
-                        "query_parameters": {},
                         "call": {
                             "path": "/Custom/{entity_id}/District/Building"
                         },
@@ -760,7 +739,6 @@
                 "operations": {
                     "District_BuildingSchoolYearList": {
                         "method": "get",
-                        "query_parameters": {},
                         "call": {
                             "path": "/Custom/{entity_id}/District/BuildingSchoolYear"
                         },
@@ -780,7 +758,6 @@
                 "operations": {
                     "District_CalendarYearList": {
                         "method": "get",
-                        "query_parameters": {},
                         "call": {
                             "path": "/Custom/{entity_id}/District/CalendarYear"
                         },
@@ -800,7 +777,6 @@
                 "operations": {
                     "District_ConfigEntityYearList": {
                         "method": "get",
-                        "query_parameters": {},
                         "call": {
                             "path": "/Custom/{entity_id}/District/ConfigEntityYear"
                         },
@@ -832,7 +808,6 @@
                 "operations": {
                     "District_DistrictList": {
                         "method": "get",
-                        "query_parameters": {},
                         "call": {
                             "path": "/Custom/{entity_id}/District/District"
                         },
@@ -852,7 +827,6 @@
                 "operations": {
                     "District_DistrictSchoolYearList": {
                         "method": "get",
-                        "query_parameters": {},
                         "call": {
                             "path": "/Custom/{entity_id}/District/DistrictSchoolYear"
                         },
@@ -880,7 +854,6 @@
                 "operations": {
                     "District_EntityList": {
                         "method": "get",
-                        "query_parameters": {},
                         "call": {
                             "path": "/Custom/{entity_id}/District/Entity"
                         },
@@ -905,7 +878,6 @@
                 "operations": {
                     "District_FiscalYearList": {
                         "method": "get",
-                        "query_parameters": {},
                         "call": {
                             "path": "/Custom/{entity_id}/District/FiscalYear"
                         },
@@ -927,7 +899,6 @@
                 "operations": {
                     "District_FloorList": {
                         "method": "get",
-                        "query_parameters": {},
                         "call": {
                             "path": "/Custom/{entity_id}/District/Floor"
                         },
@@ -955,7 +926,6 @@
                 "operations": {
                     "District_RoomList": {
                         "method": "get",
-                        "query_parameters": {},
                         "call": {
                             "path": "/Custom/{entity_id}/District/Room"
                         },
@@ -977,7 +947,6 @@
                 "operations": {
                     "District_RoomTypeList": {
                         "method": "get",
-                        "query_parameters": {},
                         "call": {
                             "path": "/Custom/{entity_id}/District/RoomType"
                         },
@@ -1001,7 +970,6 @@
                 "operations": {
                     "District_SchoolYearList": {
                         "method": "get",
-                        "query_parameters": {},
                         "call": {
                             "path": "/Custom/{entity_id}/District/SchoolYear"
                         },
@@ -1026,11 +994,12 @@
                 "operations": {
                     "Employee_CalendarList": {
                         "method": "get",
-                        "query_parameters": {
-                            "FiscalYearId": "{fiscal_year_id}"
-                        },
+                        
                         "call": {
-                            "path": "/Custom/{entity_id}/Employee/Calendar"
+                            "path": "/Custom/{entity_id}/Employee/Calendar",
+                            "queryParameters": {
+                                "FiscalYearId": "{fiscal_year_id}"
+                            }
                         },
                         "processing_options": {
                             "output_field": "Objects"
@@ -1050,11 +1019,11 @@
                 "operations": {
                     "Employee_CheckLocationList": {
                         "method": "get",
-                        "query_parameters": {
-                            "FiscalYearId": "{fiscal_year_id}"
-                        },
                         "call": {
-                            "path": "/Custom/{entity_id}/Employee/CheckLocation"
+                            "path": "/Custom/{entity_id}/Employee/CheckLocation",
+                            "queryParameters": {
+                                "FiscalYearId": "{fiscal_year_id}"
+                            }
                         },
                         "processing_options": {
                             "output_field": "Objects"
@@ -1074,11 +1043,11 @@
                 "operations": {
                     "Employee_DegreeTypeList": {
                         "method": "get",
-                        "query_parameters": {
-                            "FiscalYearId": "{fiscal_year_id}"
-                        },
                         "call": {
-                            "path": "/Custom/{entity_id}/Employee/DegreeType"
+                            "path": "/Custom/{entity_id}/Employee/DegreeType",
+                            "queryParameters": {
+                                "FiscalYearId": "{fiscal_year_id}"
+                            }
                         },
                         "processing_options": {
                             "output_field": "Objects"
@@ -1101,11 +1070,12 @@
                 "operations": {
                     "Employee_DegreeList": {
                         "method": "get",
-                        "query_parameters": {
-                            "FiscalYearId": "{fiscal_year_id}"
-                        },
+
                         "call": {
-                            "path": "/Custom/{entity_id}/Employee/Degree"
+                            "path": "/Custom/{entity_id}/Employee/Degree",
+                            "queryParameters": {
+                                "FiscalYearId": "{fiscal_year_id}"
+                            }
                         },
                         "processing_options": {
                             "output_field": "Objects"
@@ -1132,11 +1102,11 @@
                 "operations": {
                     "Employee_EmployeeDistrictList": {
                         "method": "get",
-                        "query_parameters": {
-                            "FiscalYearId": "{fiscal_year_id}"
-                        },
                         "call": {
-                            "path": "/Custom/{entity_id}/Employee/EmployeeDistrict"
+                            "path": "/Custom/{entity_id}/Employee/EmployeeDistrict",
+                            "queryParameters": {
+                                "FiscalYearId": "{fiscal_year_id}"
+                            }
                         },
                         "processing_options": {
                             "output_field": "Objects"
@@ -1156,11 +1126,11 @@
                 "operations": {
                     "Employee_EmployeeFiscalYearList": {
                         "method": "get",
-                        "query_parameters": {
-                            "FiscalYearId": "{fiscal_year_id}"
-                        },
                         "call": {
-                            "path": "/Custom/{entity_id}/Employee/EmployeeFiscalYear"
+                            "path": "/Custom/{entity_id}/Employee/EmployeeFiscalYear",
+                            "queryParameters": {
+                                "FiscalYearId": "{fiscal_year_id}"
+                            }
                         },
                         "processing_options": {
                             "output_field": "Objects"
@@ -1180,11 +1150,11 @@
                 "operations": {
                     "Employee_EmployeeList": {
                         "method": "get",
-                        "query_parameters": {
-                            "FiscalYearId": "{fiscal_year_id}"
-                        },
                         "call": {
-                            "path": "/Custom/{entity_id}/Employee/Employee"
+                            "path": "/Custom/{entity_id}/Employee/Employee",
+                            "queryParameters": {
+                                "FiscalYearId": "{fiscal_year_id}"
+                            }
                         },
                         "processing_options": {
                             "output_field": "Objects"
@@ -1204,11 +1174,12 @@
                 "operations": {
                     "Employee_EmployeeYearExperienceList": {
                         "method": "get",
-                        "query_parameters": {
-                            "FiscalYearId": "{fiscal_year_id}"
-                        },
+                        
                         "call": {
-                            "path": "/Custom/{entity_id}/Employee/EmployeeYearExperience"
+                            "path": "/Custom/{entity_id}/Employee/EmployeeYearExperience",
+                            "queryParameters": {
+                                "FiscalYearId": "{fiscal_year_id}"
+                            }
                         },
                         "processing_options": {
                             "output_field": "Objects"
@@ -1234,11 +1205,11 @@
                 "operations": {
                     "Employee_EmploymentList": {
                         "method": "get",
-                        "query_parameters": {
-                            "FiscalYearId": "{fiscal_year_id}"
-                        },
                         "call": {
-                            "path": "/Custom/{entity_id}/Employee/Employment"
+                            "path": "/Custom/{entity_id}/Employee/Employment",
+                            "queryParameters": {
+                                "FiscalYearId": "{fiscal_year_id}"
+                            }
                         },
                         "processing_options": {
                             "output_field": "Objects"
@@ -1259,11 +1230,11 @@
                 "operations": {
                     "Employee_EmploymentStatusList": {
                         "method": "get",
-                        "query_parameters": {
-                            "FiscalYearId": "{fiscal_year_id}"
-                        },
                         "call": {
-                            "path": "/Custom/{entity_id}/Employee/EmploymentStatus"
+                            "path": "/Custom/{entity_id}/Employee/EmploymentStatus",
+                            "queryParameters": {
+                                "FiscalYearId": "{fiscal_year_id}"
+                            }
                         },
                         "processing_options": {
                             "output_field": "Objects"
@@ -1283,11 +1254,11 @@
                 "operations": {
                     "Employee_TerminationList": {
                         "method": "get",
-                        "query_parameters": {
-                            "FiscalYearId": "{fiscal_year_id}"
-                        },
                         "call": {
-                            "path": "/Custom/{entity_id}/Employee/Termination"
+                            "path": "/Custom/{entity_id}/Employee/Termination",
+                            "queryParameters": {
+                                "FiscalYearId": "{fiscal_year_id}"
+                            }
                         },
                         "processing_options": {
                             "output_field": "Objects"
@@ -1308,11 +1279,11 @@
                 "operations": {
                     "Enrollment_EntitySchoolList": {
                         "method": "get",
-                        "query_parameters": {
-                            "SchoolYearID": "{school_year_id}"
-                        },
                         "call": {
-                            "path": "/Custom/{entity_id}/Enrollment/EntitySchool"
+                            "path": "/Custom/{entity_id}/Enrollment/EntitySchool",
+                            "queryParameters": {
+                                "SchoolYearID": "{school_year_id}"
+                            }
                         },
                         "processing_options": {
                             "output_field": "Objects"
@@ -1335,11 +1306,12 @@
                 "operations": {
                     "Enrollment_EntryCodeList": {
                         "method": "get",
-                        "query_parameters": {
-                            "FiscalYearId": "{fiscal_year_id}"
-                        },
+                        
                         "call": {
-                            "path": "/Custom/{entity_id}/Enrollment/EntryCode"
+                            "path": "/Custom/{entity_id}/Enrollment/EntryCode",
+                            "queryParameters": {
+                                "FiscalYearId": "{fiscal_year_id}"
+                            }
                         },
                         "processing_options": {
                             "output_field": "Objects"
@@ -1367,11 +1339,11 @@
                 "operations": {
                     "Enrollment_EntryWithdrawalList": {
                         "method": "get",
-                        "query_parameters": {
-                            "SchoolYearID": "{school_year_id}"
-                        },
                         "call": {
-                            "path": "/Custom/{entity_id}/Enrollment/EntryWithdrawal"
+                            "path": "/Custom/{entity_id}/Enrollment/EntryWithdrawal",
+                            "queryParameters": {
+                                "SchoolYearID": "{school_year_id}"
+                            }
                         },
                         "processing_options": {
                             "output_field": "Objects"
@@ -1395,11 +1367,11 @@
                 "operations": {
                     "Enrollment_GradeLevelList": {
                         "method": "get",
-                        "query_parameters": {
-                            "SchoolYearID": "{school_year_id}"
-                        },
                         "call": {
-                            "path": "/Custom/{entity_id}/Enrollment/GradeLevel"
+                            "path": "/Custom/{entity_id}/Enrollment/GradeLevel",
+                            "queryParameters": {
+                                "SchoolYearID": "{school_year_id}"
+                            }
                         },
                         "processing_options": {
                             "output_field": "Objects"
@@ -1421,11 +1393,11 @@
                 "operations": {
                     "Enrollment_HomeroomList": {
                         "method": "get",
-                        "query_parameters": {
-                            "SchoolYearID": "{school_year_id}"
-                        },
                         "call": {
-                            "path": "/Custom/{entity_id}/Enrollment/Homeroom"
+                            "path": "/Custom/{entity_id}/Enrollment/Homeroom",
+                            "queryParameters": {
+                                "SchoolYearID": "{school_year_id}"
+                            }
                         },
                         "processing_options": {
                             "output_field": "Objects"
@@ -1457,11 +1429,11 @@
                 "operations": {
                     "Enrollment_SchoolList": {
                         "method": "get",
-                        "query_parameters": {
-                            "SchoolYearID": "{school_year_id}"
-                        },
                         "call": {
-                            "path": "/Custom/{entity_id}/Enrollment/School"
+                            "path": "/Custom/{entity_id}/Enrollment/School",
+                            "queryParameters": {
+                                "SchoolYearID": "{school_year_id}"
+                            }
                         },
                         "processing_options": {
                             "output_field": "Objects"
@@ -1495,11 +1467,11 @@
                 "operations": {
                     "Enrollment_StudentEntityYearList": {
                         "method": "get",
-                        "query_parameters": {
-                            "SchoolYearID": "{school_year_id}"
-                        },
                         "call": {
-                            "path": "/Custom/{entity_id}/Enrollment/StudentEntityYear"
+                            "path": "/Custom/{entity_id}/Enrollment/StudentEntityYear",
+                            "queryParameters": {
+                                "SchoolYearID": "{school_year_id}"
+                            }
                         },
                         "processing_options": {
                             "output_field": "Objects"
@@ -1519,11 +1491,11 @@
                 "operations": {
                     "Enrollment_StudentTypeList": {
                         "method": "get",
-                        "query_parameters": {
-                            "SchoolYearID": "{school_year_id}"
-                        },
                         "call": {
-                            "path": "/Custom/{entity_id}/Enrollment/StudentType"
+                            "path": "/Custom/{entity_id}/Enrollment/StudentType",
+                            "queryParameters": {
+                                "SchoolYearID": "{school_year_id}"
+                            }
                         },
                         "processing_options": {
                             "output_field": "Objects"
@@ -1546,11 +1518,11 @@
                 "operations": {
                     "Enrollment_WithdrawalCodeList": {
                         "method": "get",
-                        "query_parameters": {
-                            "SchoolYearID": "{school_year_id}"
-                        },
                         "call": {
-                            "path": "/Custom/{entity_id}/Enrollment/WithdrawalCode"
+                            "path": "/Custom/{entity_id}/Enrollment/WithdrawalCode",
+                            "queryParameters": {
+                                "SchoolYearID": "{school_year_id}"
+                            }
                         },
                         "processing_options": {
                             "output_field": "Objects"
@@ -1569,7 +1541,6 @@
                 "operations": {
                     "Family_FamilyList": {
                         "method": "get",
-                        "query_parameters": {},
                         "call": {
                             "path": "/Custom/{entity_id}/Family/Family"
                         },
@@ -1590,7 +1561,6 @@
                 "operations": {
                     "Family_FamilyGuardianList": {
                         "method": "get",
-                        "query_parameters": {},
                         "call": {
                             "path": "/Custom/{entity_id}/Family/FamilyGuardian"
                         },
@@ -1620,7 +1590,6 @@
                 "operations": {
                     "Family_StudentFamilyList": {
                         "method": "get",
-                        "query_parameters": {},
                         "call": {
                             "path": "/Custom/{entity_id}/Family/StudentFamily"
                         },
@@ -1648,7 +1617,6 @@
                 "operations": {
                     "Family_StudentGuardianList": {
                         "method": "get",
-                        "query_parameters": {},
                         "call": {
                             "path": "/Custom/{entity_id}/Family/StudentGuardian"
                         },
@@ -1675,7 +1643,6 @@
                 "operations": {
                     "FoodService_CustomerList": {
                         "method": "get",
-                        "query_parameters": {},
                         "call": {
                             "path": "/Custom/{entity_id}/FoodService/Customer"
                         },
@@ -1699,7 +1666,6 @@
               "operations": {
                 "Payroll_AssignmentPayTypeList": {
                   "method": "get",
-                  "query_parameters": {},
                   "call": {
                     "path": "/Custom/{entity_id}/Payroll/AssignmentPayType"
                   },
@@ -1721,7 +1687,6 @@
               "operations": {
                 "Payroll_PayTypeList": {
                   "method": "get",
-                  "query_parameters": {},
                   "call": {
                     "path": "/Custom/{entity_id}/Payroll/PayType"
                   },
@@ -1763,11 +1728,11 @@
                 "operations": {
                     "Position_AssignmentList": {
                         "method": "get",
-                        "query_parameters": {
-                            "FiscalYearId": "{fiscal_year_id}"
-                        },
                         "call": {
-                            "path": "/Custom/{entity_id}/Position/Assignment"
+                            "path": "/Custom/{entity_id}/Position/Assignment",
+                            "queryParameters": {
+                                "FiscalYearId": "{fiscal_year_id}"
+                            }
                         },
                         "processing_options": {
                             "output_field": "Objects"
@@ -1793,11 +1758,11 @@
                 "operations": {
                     "Position_AssignmentDetailList": {
                         "method": "get",
-                        "query_parameters": {
-                            "FiscalYearId": "{fiscal_year_id}"
-                        },
                         "call": {
-                            "path": "/Custom/{entity_id}/Position/AssignmentDetail"
+                            "path": "/Custom/{entity_id}/Position/AssignmentDetail",
+                            "queryParameters": {
+                                "FiscalYearId": "{fiscal_year_id}"
+                            }
                         },
                         "processing_options": {
                             "output_field": "Objects"
@@ -1818,11 +1783,11 @@
                 "operations": {
                     "Position_AssignmentTypeList": {
                         "method": "get",
-                        "query_parameters": {
-                            "FiscalYearId": "{fiscal_year_id}"
-                        },
                         "call": {
-                            "path": "/Custom/{entity_id}/Position/AssignmentType"
+                            "path": "/Custom/{entity_id}/Position/AssignmentType",
+                            "queryParameters": {
+                                "FiscalYearId": "{fiscal_year_id}"
+                            }
                         },
                         "processing_options": {
                             "output_field": "Objects"
@@ -1843,11 +1808,11 @@
                 "operations": {
                     "Position_DepartmentList": {
                         "method": "get",
-                        "query_parameters": {
-                            "FiscalYearId": "{fiscal_year_id}"
-                        },
                         "call": {
-                            "path": "/Custom/{entity_id}/Position/Department"
+                            "path": "/Custom/{entity_id}/Position/Department",
+                            "queryParameters": {
+                                "FiscalYearId": "{fiscal_year_id}"
+                            }
                         },
                         "processing_options": {
                             "output_field": "Objects"
@@ -1866,11 +1831,11 @@
                 "operations": {
                     "Position_EmployeePlacementList": {
                         "method": "get",
-                        "query_parameters": {
-                            "FiscalYearId": "{fiscal_year_id}"
-                        },
                         "call": {
-                            "path": "/Custom/{entity_id}/Position/EmployeePlacement"
+                            "path": "/Custom/{entity_id}/Position/EmployeePlacement",
+                            "queryParameters": {
+                                "FiscalYearId": "{fiscal_year_id}"
+                            }
                         },
                         "processing_options": {
                             "output_field": "Objects"
@@ -1892,11 +1857,11 @@
                 "operations": {
                     "Position_EmployeePlacementDetailList": {
                         "method": "get",
-                        "query_parameters": {
-                            "FiscalYearId": "{fiscal_year_id}"
-                        },
                         "call": {
-                            "path": "/Custom/{entity_id}/Position/EmployeePlacementDetail"
+                            "path": "/Custom/{entity_id}/Position/EmployeePlacementDetail",
+                            "queryParameters": {
+                                "FiscalYearId": "{fiscal_year_id}"
+                            }
                         },
                         "processing_options": {
                             "output_field": "Objects"
@@ -1915,11 +1880,11 @@
                 "operations": {
                     "Position_EmployeePositionTypeList": {
                         "method": "get",
-                        "query_parameters": {
-                            "FiscalYearId": "{fiscal_year_id}"
-                        },
                         "call": {
-                            "path": "/Custom/{entity_id}/Position/EmployeePositionType"
+                            "path": "/Custom/{entity_id}/Position/EmployeePositionType",
+                            "queryParameters": {
+                                "FiscalYearId": "{fiscal_year_id}"
+                            }
                         },
                         "processing_options": {
                             "output_field": "Objects"
@@ -1944,11 +1909,11 @@
                 "operations": {
                     "Position_FTEGroupList": {
                         "method": "get",
-                        "query_parameters": {
-                            "FiscalYearId": "{fiscal_year_id}"
-                        },
                         "call": {
-                            "path": "/Custom/{entity_id}/Position/FTEGroup"
+                            "path": "/Custom/{entity_id}/Position/FTEGroup",
+                            "queryParameters": {
+                                "FiscalYearId": "{fiscal_year_id}"
+                            }
                         },
                         "processing_options": {
                             "output_field": "Objects"
@@ -1969,11 +1934,11 @@
                 "operations": {
                     "Position_JobTypeList": {
                         "method": "get",
-                        "query_parameters": {
-                            "FiscalYearId": "{fiscal_year_id}"
-                        },
                         "call": {
-                            "path": "/Custom/{entity_id}/Position/JobType"
+                            "path": "/Custom/{entity_id}/Position/JobType",
+                            "queryParameters": {
+                                "FiscalYearId": "{fiscal_year_id}"
+                            }
                         },
                         "processing_options": {
                             "output_field": "Objects"
@@ -1993,11 +1958,11 @@
                 "operations": {
                     "Position_LaneList": {
                         "method": "get",
-                        "query_parameters": {
-                            "FiscalYearId": "{fiscal_year_id}"
-                        },
                         "call": {
-                            "path": "/Custom/{entity_id}/Position/Lane"
+                            "path": "/Custom/{entity_id}/Position/Lane",
+                            "queryParameters": {
+                                "FiscalYearId": "{fiscal_year_id}"
+                            }
                         },
                         "processing_options": {
                             "output_field": "Objects"
@@ -2018,11 +1983,11 @@
                 "operations": {
                     "Position_MatrixList": {
                         "method": "get",
-                        "query_parameters": {
-                            "FiscalYearId": "{fiscal_year_id}"
-                        },
                         "call": {
-                            "path": "/Custom/{entity_id}/Position/Matrix"
+                            "path": "/Custom/{entity_id}/Position/Matrix",
+                            "queryParameters": {
+                                "FiscalYearId": "{fiscal_year_id}"
+                            }
                         },
                         "processing_options": {
                             "output_field": "Objects"
@@ -2040,11 +2005,11 @@
                 "operations": {
                     "Position_MatrixLaneList": {
                         "method": "get",
-                        "query_parameters": {
-                            "FiscalYearId": "{fiscal_year_id}"
-                        },
                         "call": {
-                            "path": "/Custom/{entity_id}/Position/MatrixLane"
+                            "path": "/Custom/{entity_id}/Position/MatrixLane",
+                            "queryParameters": {
+                                "FiscalYearId": "{fiscal_year_id}"
+                            }
                         },
                         "processing_options": {
                             "output_field": "Objects"
@@ -2065,11 +2030,11 @@
                 "operations": {
                     "Position_OrganizationChartList": {
                         "method": "get",
-                        "query_parameters": {
-                            "FiscalYearId": "{fiscal_year_id}"
-                        },
                         "call": {
-                            "path": "/Custom/{entity_id}/Position/OrganizationChart"
+                            "path": "/Custom/{entity_id}/Position/OrganizationChart",
+                            "queryParameters": {
+                                "FiscalYearId": "{fiscal_year_id}"
+                            }
                         },
                         "processing_options": {
                             "output_field": "Objects"
@@ -2091,11 +2056,11 @@
                 "operations": {
                     "Position_OrganizationChartApproverList": {
                         "method": "get",
-                        "query_parameters": {
-                            "FiscalYearId": "{fiscal_year_id}"
-                        },
                         "call": {
-                            "path": "/Custom/{entity_id}/Position/OrganizationChartApprover"
+                            "path": "/Custom/{entity_id}/Position/OrganizationChartApprover",
+                            "queryParameters": {
+                                "FiscalYearId": "{fiscal_year_id}"
+                            }
                         },
                         "processing_options": {
                             "output_field": "Objects"
@@ -2115,11 +2080,11 @@
                 "operations": {
                     "Position_PlacementList": {
                         "method": "get",
-                        "query_parameters": {
-                            "FiscalYearId": "{fiscal_year_id}"
-                        },
                         "call": {
-                            "path": "/Custom/{entity_id}/Position/Placement"
+                            "path": "/Custom/{entity_id}/Position/Placement",
+                            "queryParameters": {
+                                "FiscalYearId": "{fiscal_year_id}"
+                            }
                         },
                         "processing_options": {
                             "output_field": "Objects"
@@ -2158,11 +2123,11 @@
                 "operations": {
                     "Position_PositionList": {
                         "method": "get",
-                        "query_parameters": {
-                            "FiscalYearId": "{fiscal_year_id}"
-                        },
                         "call": {
-                            "path": "/Custom/{entity_id}/Position/Position"
+                            "path": "/Custom/{entity_id}/Position/Position",
+                            "queryParameters": {
+                                "FiscalYearId": "{fiscal_year_id}"
+                            }
                         },
                         "processing_options": {
                             "output_field": "Objects"
@@ -2189,11 +2154,11 @@
                 "operations": {
                     "Position_PositionDistributionList": {
                         "method": "get",
-                        "query_parameters": {
-                            "FiscalYearId": "{fiscal_year_id}"
-                        },
                         "call": {
-                            "path": "/Custom/{entity_id}/Position/PositionDistribution"
+                            "path": "/Custom/{entity_id}/Position/PositionDistribution",
+                            "queryParameters": {
+                                "FiscalYearId": "{fiscal_year_id}"
+                            }
                         },
                         "processing_options": {
                             "output_field": "Objects"
@@ -2225,11 +2190,11 @@
                 "operations": {
                     "Position_PositionDistributionSetList": {
                         "method": "get",
-                        "query_parameters": {
-                            "FiscalYearId": "{fiscal_year_id}"
-                        },
                         "call": {
-                            "path": "/Custom/{entity_id}/Position/PositionDistributionSet"
+                            "path": "/Custom/{entity_id}/Position/PositionDistributionSet",
+                            "queryParameters": {
+                                "FiscalYearId": "{fiscal_year_id}"
+                            }
                         },
                         "processing_options": {
                             "output_field": "Objects"
@@ -2250,11 +2215,11 @@
                 "operations": {
                     "Position_PositionGroupList": {
                         "method": "get",
-                        "query_parameters": {
-                            "FiscalYearId": "{fiscal_year_id}"
-                        },
                         "call": {
-                            "path": "/Custom/{entity_id}/Position/PositionGroup"
+                            "path": "/Custom/{entity_id}/Position/PositionGroup",
+                            "queryParameters": {
+                                "FiscalYearId": "{fiscal_year_id}"
+                            }
                         },
                         "processing_options": {
                             "output_field": "Objects"
@@ -2276,11 +2241,11 @@
                 "operations": {
                     "Position_PositionNumberList": {
                         "method": "get",
-                        "query_parameters": {
-                            "FiscalYearId": "{fiscal_year_id}"
-                        },
                         "call": {
-                            "path": "/Custom/{entity_id}/Position/PositionNumber"
+                            "path": "/Custom/{entity_id}/Position/PositionNumber",
+                            "queryParameters": {
+                                "FiscalYearId": "{fiscal_year_id}"
+                            }
                         },
                         "processing_options": {
                             "output_field": "Objects"
@@ -2309,11 +2274,11 @@
                 "operations": {
                     "Position_PositionTypeList": {
                         "method": "get",
-                        "query_parameters": {
-                            "FiscalYearId": "{fiscal_year_id}"
-                        },
                         "call": {
-                            "path": "/Custom/{entity_id}/Position/PositionType"
+                            "path": "/Custom/{entity_id}/Position/PositionType",
+                            "queryParameters": {
+                                "FiscalYearId": "{fiscal_year_id}"
+                            }
                         },
                         "processing_options": {
                             "output_field": "Objects"
@@ -2335,11 +2300,11 @@
                 "operations": {
                     "Position_StepList": {
                         "method": "get",
-                        "query_parameters": {
-                            "FiscalYearId": "{fiscal_year_id}"
-                        },
                         "call": {
-                            "path": "/Custom/{entity_id}/Position/Step"
+                            "path": "/Custom/{entity_id}/Position/Step",
+                            "queryParameters": {
+                                "FiscalYearId": "{fiscal_year_id}"
+                            }
                         },
                         "processing_options": {
                             "output_field": "Objects"
@@ -2360,11 +2325,11 @@
                 "operations": {
                     "Scheduling_CourseTypeList": {
                         "method": "get",
-                        "query_parameters": {
-                            "SchoolYearID": "{school_year_id}"
-                        },
                         "call": {
-                            "path": "/Custom/{entity_id}/Scheduling/CourseType"
+                            "path": "/Custom/{entity_id}/Scheduling/CourseType",
+                            "queryParameters": {
+                                "SchoolYearID": "{school_year_id}"
+                            }
                         },
                         "processing_options": {
                             "output_field": "Objects"
@@ -2395,11 +2360,11 @@
                 "operations": {
                     "Scheduling_CourseList": {
                         "method": "get",
-                        "query_parameters": {
-                            "SchoolYearID": "{school_year_id}"
-                        },
                         "call": {
-                            "path": "/Custom/{entity_id}/Scheduling/Course"
+                            "path": "/Custom/{entity_id}/Scheduling/Course",
+                            "queryParameters": {
+                                "SchoolYearID": "{school_year_id}"
+                            }
                         },
                         "processing_options": {
                             "output_field": "Objects"
@@ -2425,11 +2390,11 @@
                 "operations": {
                     "Scheduling_MeetList": {
                         "method": "get",
-                        "query_parameters": {
-                            "SchoolYearID": "{school_year_id}"
-                        },
                         "call": {
-                            "path": "/Custom/{entity_id}/Scheduling/Meet"
+                            "path": "/Custom/{entity_id}/Scheduling/Meet",
+                            "queryParameters": {
+                                "SchoolYearID": "{school_year_id}"
+                            }
                         },
                         "processing_options": {
                             "output_field": "Objects"
@@ -2451,11 +2416,11 @@
                 "operations": {
                     "Scheduling_MeetSummaryList": {
                         "method": "get",
-                        "query_parameters": {
-                            "SchoolYearID": "{school_year_id}"
-                        },
                         "call": {
-                            "path": "/Custom/{entity_id}/Scheduling/MeetSummary"
+                            "path": "/Custom/{entity_id}/Scheduling/MeetSummary",
+                            "queryParameters": {
+                                "SchoolYearID": "{school_year_id}"
+                            }
                         },
                         "processing_options": {
                             "output_field": "Objects"
@@ -2476,11 +2441,11 @@
                 "operations": {
                     "Scheduling_SchedulingTeamList": {
                         "method": "get",
-                        "query_parameters": {
-                            "SchoolYearID": "{school_year_id}"
-                        },
                         "call": {
-                            "path": "/Custom/{entity_id}/Scheduling/SchedulingTeam"
+                            "path": "/Custom/{entity_id}/Scheduling/SchedulingTeam",
+                            "queryParameters": {
+                                "SchoolYearID": "{school_year_id}"
+                            }
                         },
                         "processing_options": {
                             "output_field": "Objects"
@@ -2506,11 +2471,11 @@
                 "operations": {
                     "Scheduling_SectionList": {
                         "method": "get",
-                        "query_parameters": {
-                            "SchoolYearID": "{school_year_id}"
-                        },
                         "call": {
-                            "path": "/Custom/{entity_id}/Scheduling/Section"
+                            "path": "/Custom/{entity_id}/Scheduling/Section",
+                            "queryParameters": {
+                                "SchoolYearID": "{school_year_id}"
+                            }
                         },
                         "processing_options": {
                             "output_field": "Objects"
@@ -2531,11 +2496,11 @@
                 "operations": {
                     "Scheduling_StaffMeetList": {
                         "method": "get",
-                        "query_parameters": {
-                            "SchoolYearID": "{school_year_id}"
-                        },
                         "call": {
-                            "path": "/Custom/{entity_id}/Scheduling/StaffMeet"
+                            "path": "/Custom/{entity_id}/Scheduling/StaffMeet",
+                            "queryParameters": {
+                                "SchoolYearID": "{school_year_id}"
+                            }
                         },
                         "processing_options": {
                             "output_field": "Objects"
@@ -2556,11 +2521,11 @@
                 "operations": {
                     "Scheduling_StaffStudentList": {
                         "method": "get",
-                        "query_parameters": {
-                            "SchoolYearID": "{school_year_id}"
-                        },
                         "call": {
-                            "path": "/Custom/{entity_id}/Scheduling/StaffStudent"
+                            "path": "/Custom/{entity_id}/Scheduling/StaffStudent",
+                            "queryParameters": {
+                                "SchoolYearID": "{school_year_id}"
+                            }
                         },
                         "processing_options": {
                             "output_field": "Objects"
@@ -2586,11 +2551,11 @@
                 "operations": {
                     "Scheduling_StudentSectionList": {
                         "method": "get",
-                        "query_parameters": {
-                            "SchoolYearID": "{school_year_id}"
-                        },
                         "call": {
-                            "path": "/Custom/{entity_id}/Scheduling/StudentSection"
+                            "path": "/Custom/{entity_id}/Scheduling/StudentSection",
+                            "queryParameters": {
+                                "SchoolYearID": "{school_year_id}"
+                            }
                         },
                         "processing_options": {
                             "output_field": "Objects"
@@ -2613,11 +2578,11 @@
                 "operations": {
                     "Scheduling_StudentSectionMeetSummaryList": {
                         "method": "get",
-                        "query_parameters": {
-                            "SchoolYearID": "{school_year_id}"
-                        },
                         "call": {
-                            "path": "/Custom/{entity_id}/Scheduling/StudentSectionMeetSummary"
+                            "path": "/Custom/{entity_id}/Scheduling/StudentSectionMeetSummary",
+                            "queryParameters": {
+                                "SchoolYearID": "{school_year_id}"
+                            }
                         },
                         "processing_options": {
                             "output_field": "Objects"
@@ -2639,7 +2604,6 @@
                 "operations": {
                     "Security_AuthenticationRoleList": {
                         "method": "get",
-                        "query_parameters": {},
                         "call": {
                             "path": "/Custom/{entity_id}/Security/AuthenticationRole"
                         },
@@ -2660,7 +2624,6 @@
                 "operations": {
                     "Security_GroupList": {
                         "method": "get",
-                        "query_parameters": {},
                         "call": {
                             "path": "/Custom/{entity_id}/Security/Group"
                         },
@@ -2681,7 +2644,6 @@
                 "operations": {
                     "Security_GroupMembershipList": {
                         "method": "get",
-                        "query_parameters": {},
                         "call": {
                             "path": "/Custom/{entity_id}/Security/GroupMembership"
                         },
@@ -2726,7 +2688,6 @@
                 "operations": {
                     "Security_UserList": {
                         "method": "get",
-                        "query_parameters": {},
                         "call": {
                             "path": "/Custom/{entity_id}/Security/User"
                         },
@@ -2768,7 +2729,6 @@
                 "operations": {
                     "SkySys_StateList": {
                         "method": "get",
-                        "query_parameters": {},
                         "call": {
                             "path": "/Custom/{entity_id}/SkySys/State"
                         },
@@ -2789,11 +2749,11 @@
                 "operations": {
                     "Staff_ConfigEntityGroupYearList": {
                         "method": "get",
-                        "query_parameters": {
-                            "SchoolYearID": "{school_year_id}"
-                        },
                         "call": {
-                            "path": "/Custom/{entity_id}/Staff/ConfigEntityGroupYear"
+                            "path": "/Custom/{entity_id}/Staff/ConfigEntityGroupYear",
+                            "queryParameters": {
+                                "SchoolYearID": "{school_year_id}"
+                            }
                         },
                         "processing_options": {
                             "output_field": "Objects"
@@ -2815,11 +2775,11 @@
                 "operations": {
                     "Staff_DepartmentList": {
                         "method": "get",
-                        "query_parameters": {
-                            "SchoolYearID": "{school_year_id}"
-                        },
                         "call": {
-                            "path": "/Custom/{entity_id}/Staff/Department"
+                            "path": "/Custom/{entity_id}/Staff/Department",
+                            "queryParameters": {
+                                "SchoolYearID": "{school_year_id}"
+                            }
                         },
                         "processing_options": {
                             "output_field": "Objects"
@@ -2845,7 +2805,6 @@
                 "operations": {
                     "Staff_StaffList": {
                         "method": "get",
-                        "query_parameters": {},
                         "call": {
                             "path": "/Custom/{entity_id}/Staff/Staff"
                         },
@@ -2906,11 +2865,11 @@
                 "operations": {
                     "Staff_StaffDepartmentList": {
                         "method": "get",
-                        "query_parameters": {
-                            "SchoolYearID": "{school_year_id}"
-                        },
                         "call": {
-                            "path": "/Custom/{entity_id}/Staff/StaffDepartment"
+                            "path": "/Custom/{entity_id}/Staff/StaffDepartment",
+                            "queryParameters": {
+                                "SchoolYearID": "{school_year_id}"
+                            }
                         },
                         "processing_options": {
                             "output_field": "Objects"
@@ -2937,11 +2896,11 @@
                 "operations": {
                     "Staff_StaffEntityYearList": {
                         "method": "get",
-                        "query_parameters": {
-                            "SchoolYearID": "{school_year_id}"
-                        },
                         "call": {
-                            "path": "/Custom/{entity_id}/Staff/StaffEntityYear"
+                            "path": "/Custom/{entity_id}/Staff/StaffEntityYear",
+                            "queryParameters": {
+                                "SchoolYearID": "{school_year_id}"
+                            }
                         },
                         "processing_options": {
                             "output_field": "Objects"
@@ -2983,11 +2942,11 @@
                 "operations": {
                     "Staff_StaffStaffTypeList": {
                         "method": "get",
-                        "query_parameters": {
-                            "SchoolYearID": "{school_year_id}"
-                        },
                         "call": {
-                            "path": "/Custom/{entity_id}/Staff/StaffStaffType"
+                            "path": "/Custom/{entity_id}/Staff/StaffStaffType",
+                            "queryParameters": {
+                                "SchoolYearID": "{school_year_id}"
+                            }
                         },
                         "processing_options": {
                             "output_field": "Objects"
@@ -3028,11 +2987,11 @@
                 "operations": {
                     "Staff_StaffTypeList": {
                         "method": "get",
-                        "query_parameters": {
-                            "SchoolYearID": "{school_year_id}"
-                        },
                         "call": {
-                            "path": "/Custom/{entity_id}/Staff/StaffType"
+                            "path": "/Custom/{entity_id}/Staff/StaffType",
+                            "queryParameters": {
+                                "SchoolYearID": "{school_year_id}"
+                            }
                         },
                         "processing_options": {
                             "output_field": "Objects"
@@ -3053,7 +3012,6 @@
                 "operations": {
                     "StateReporting_StateInternetAccessList": {
                         "method": "get",
-                        "query_parameters": {},
                         "call": {
                             "path": "/Custom/{entity_id}/StateReporting/StateInternetAccess"
                         },
@@ -3076,7 +3034,6 @@
                 "operations": {
                     "StateReporting_StateInternetAccessTypeList": {
                         "method": "get",
-                        "query_parameters": {},
                         "call": {
                             "path": "/Custom/{entity_id}/StateReporting/StateInternetAccessType"
                         },
@@ -3098,11 +3055,11 @@
                 "operations": {
                     "Student_InternetAccessList": {
                         "method": "get",
-                        "query_parameters": {
-                            "SchoolYearID": "{school_year_id}"
-                        },
                         "call": {
-                            "path": "/Custom/{entity_id}/Student/InternetAccess"
+                            "path": "/Custom/{entity_id}/Student/InternetAccess",
+                            "queryParameters": {
+                                "SchoolYearID": "{school_year_id}"
+                            }
                         },
                         "processing_options": {
                             "output_field": "Objects"
@@ -3122,11 +3079,11 @@
                 "operations": {
                     "Student_InternetAccessTypeList": {
                         "method": "get",
-                        "query_parameters": {
-                            "SchoolYearID": "{school_year_id}"
-                        },
                         "call": {
-                            "path": "/Custom/{entity_id}/Student/InternetAccessType"
+                            "path": "/Custom/{entity_id}/Student/InternetAccessType",
+                            "queryParameters": {
+                                "SchoolYearID": "{school_year_id}"
+                            }
                         },
                         "processing_options": {
                             "output_field": "Objects"
@@ -3144,11 +3101,11 @@
                 "operations": {
                     "Student_StudentCustomCodeList": {
                         "method": "get",
-                        "query_parameters": {
-                            "SchoolYearID": "{school_year_id}"
-                        },
                         "call": {
-                            "path": "/Custom/{entity_id}/Student/StudentCustomCode"
+                            "path": "/Custom/{entity_id}/Student/StudentCustomCode",
+                            "queryParameters": {
+                                "SchoolYearID": "{school_year_id}"
+                            }
                         },
                         "processing_options": {
                             "output_field": "Objects"
@@ -3192,18 +3149,761 @@
                 "operations": {
                     "Student_StudentList": {
                         "method": "get",
-                        "query_parameters": {
-                            "SchoolYearID": "{school_year_id}"
-                        },
                         "call": {
-                            "path": "/Custom/{entity_id}/Student/Student"
+                            "path": "/Custom/{entity_id}/Student/Student",
+                            "queryParameters": {
+                                "SchoolYearID": "{school_year_id}"
+                            }
                         },
                         "processing_options": {
                             "output_field": "Objects"
                         }
                     }
                 }
+            },
+      "FYOpen_District_FiscalYear": {
+        "key": "FiscalYearID",
+        "resources": {
+          "FiscalYearID": "string*",
+          "DistrictID": "string*",
+          "EntityID": "string*"
+        },
+        "operations": {
+          "FYOpen_District_FiscalYearList": {
+            "method": "get",
+            "verb": "post",
+            "body": {
+                "SearchCondition": {
+                    "BoolSearchCondition": {
+                        "FieldName": "IsClosed",
+                        "ConditionType": "Equal",
+                        "Value": "False"
+                    }
+                }
+            },
+            "call": {
+              "mode": "iteration",
+              "table": "Metadata_Districts",
+              "iterator": "EntityID",
+              "queryParameters": {
+                "searchFields[0]": "FiscalYearID",
+                "searchFields[1]": "DistrictID"
+              },
+              "path": "/Custom/{iterator}/District/FiscalYear",
+              "base": {
+                "EntityID": "{iterator}"
+              }
+            },
+            "processing_options": {
+              "output_field": "Objects"
             }
+          }
+        }
+      },
+      "FYOpen_Position_Assignment": {
+        "key": "AssignmentID",
+        "resources": {
+          "AssignmentID": "string*",
+          "AssignmentCodeIdentifier": "string*",
+          "AssignmentIdentifier": "string*",
+          "EmployeeID": "string*",
+          "EmployeePlacementID": "string*",
+          "EndDate": "string*",
+          "IsEEOCPrimaryAssignment": "string*",
+          "IsScheduleVerified": "string*",
+          "PercentEmployed": "string*",
+          "PositionDistributionAssignmentRangeIdentifier": "string*",
+          "PositionDistributionsAssignmentTypeCodeDescription": "string*",
+          "PositionDistributionsAssignmentTypeCodes": "string*",
+          "PositionDistributionsAssignmentTypeDescriptions": "string*",
+          "PositionDistributionsBuildingCodes": "string*",
+          "PositionDistributionsBuildingDescriptions": "string*",
+          "PositionID": "string*",
+          "PositionTypeEmployeeIdentifier": "string*",
+          "StartDate": "string*",
+          "StateReportingDistributionsAssignmentTypeCodes": "string*",
+          "StateReportingDistributionsBuildingCodes": "string*",
+          "StateReportingDistributionsPositionTypeCodes": "string*",
+          "StateReportingDistributionsPositionTypeDescriptions": "string*",
+          "SupplementTotalPay": "string*",
+          "WorkEndDate": "string*",
+          "WorkStartDate": "string*"
+        },
+        "operations": {
+          "Position_AssignmentList": {
+            "method": "get",
+            "call": {
+              "mode": "iteration",
+              "table": "FYOpen_District_FiscalYear",
+              "iterator": "FiscalYearID",
+              "iterator_columns": ["EntityID"],
+              "queryParameters": {
+                "FiscalYearId": "{iterator}"
+              },
+              "path": "/Custom/{EntityID}/Position/Assignment"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "FYOpen_Position_AssignmentDetail": {
+        "key": "AssignmentDetailID",
+        "resources": {
+          "AssignmentDetailID": "string*",
+          "AssignmentDetailIdentifier": "string*",
+          "AssignmentID": "string*",
+          "EmployeePlacementDetailID": "string*",
+          "EmployeePlacementIDBase": "string*",
+          "EndDate": "string*",
+          "EnteredFTE": "string*",
+          "IsOverloaded": "string*",
+          "IsPrimary": "string*",
+          "StepID": "string*",
+          "StepIDBase": "string*"
+        },
+        "operations": {
+          "Position_AssignmentDetailList": {
+            "method": "get",
+            "call": {
+              "mode": "iteration",
+              "table": "FYOpen_District_FiscalYear",
+              "iterator": "FiscalYearID",
+              "iterator_columns": ["EntityID"],
+              "queryParameters": {
+                "FiscalYearId": "{iterator}"
+              },
+              "path": "/Custom/{EntityID}/Position/AssignmentDetail"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "FYOpen_Position_AssignmentType": {
+        "key": "AssignmentTypeID",
+        "resources": {
+          "AssignmentTypeID": "string*",
+          "Code": "string*",
+          "CodeDescription": "string*",
+          "Description": "string*",
+          "DistrictID": "string*",
+          "FiscalYearID": "string*"
+        },
+        "operations": {
+          "Position_AssignmentTypeList": {
+            "method": "get",
+            "call": {
+              "mode": "iteration",
+              "table": "FYOpen_District_FiscalYear",
+              "iterator": "FiscalYearID",
+              "iterator_columns": ["EntityID"],
+			        "queryParameters": {
+                "FiscalYearId": "{iterator}"
+              },
+              "path": "/Custom/{EntityID}/Position/AssignmentType"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "FYOpen_Position_Department": {
+        "key": "DepartmentID",
+        "resources": {
+          "DepartmentID": "string*",
+          "Code": "string*",
+          "CodeDescription": "string*",
+          "Description": "string*",
+          "DistrictID": "string*",
+          "FiscalYearID": "string*"
+        },
+        "operations": {
+          "Position_DepartmentList": {
+            "method": "get",
+            "call": {
+              "mode": "iteration",
+              "table": "FYOpen_District_FiscalYear",
+              "iterator": "FiscalYearID",
+              "iterator_columns": ["EntityID"],
+			        "queryParameters": {
+                "FiscalYearId": "{iterator}"
+              },
+              "path": "/Custom/{EntityID}/Position/Department"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "FYOpen_Position_EmployeePlacement": {
+        "key": "EmployeePlacementID",
+        "resources": {
+          "EmployeePlacementID": "string*",
+          "Description": "string*",
+          "EmployeeID": "string*",
+          "PlacementID": "string*"
+        },
+        "operations": {
+          "Position_EmployeePlacementList": {
+            "method": "get",
+            "call": {
+              "mode": "iteration",
+              "table": "FYOpen_District_FiscalYear",
+              "iterator": "FiscalYearID",
+              "iterator_columns": ["EntityID"],
+			        "queryParameters": {
+                "FiscalYearId": "{iterator}"
+              },
+              "path": "/Custom/{EntityID}/Position/EmployeePlacement"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "FYOpen_Position_EmployeePlacementDetail": {
+        "key": "EmployeePlacementDetailID",
+        "resources": {
+          "EmployeePlacementDetailID": "string*",
+          "Credits": "string*",
+          "EffectiveDate": "string*",
+          "EmployeePlacementID": "string*",
+          "LaneID": "string*",
+          "Placement": "string*",
+          "StepNumber": "string*"
+        },
+        "operations": {
+          "Position_EmployeePlacementDetailList": {
+            "method": "get",
+            "call": {
+              "mode": "iteration",
+              "table": "FYOpen_District_FiscalYear",
+              "iterator": "FiscalYearID",
+              "iterator_columns": ["EntityID"],
+			        "queryParameters": {
+                "FiscalYearId": "{iterator}"
+              },
+              "path": "/Custom/{EntityID}/Position/EmployeePlacementDetail"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "FYOpen_Position_EmployeePositionType": {
+        "key": "EmployeePositionTypeID",
+        "resources": {
+          "EmployeePositionTypeID": "string*",
+          "CurrentTotalFTE": "string*",
+          "EmployeeID": "string*",
+          "PositionTypeID": "string*"
+        },
+        "operations": {
+          "Position_EmployeePositionTypeList": {
+            "method": "get",
+            "call": {
+              "mode": "iteration",
+              "table": "FYOpen_District_FiscalYear",
+              "iterator": "FiscalYearID",
+              "iterator_columns": ["EntityID"],
+			        "queryParameters": {
+                "FiscalYearId": "{iterator}"
+              },
+              "path": "/Custom/{EntityID}/Position/EmployeePositionType"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "FYOpen_Position_FTEGroup": {
+        "key": "FTEGroupID",
+        "resources": {
+          "FTEGroupID": "string*",
+          "ClosingAssignmentFTE": "string*",
+          "Code": "string*",
+          "CodeDescription": "string*",
+          "Description": "string*",
+          "DistrictID": "string*",
+          "FiscalYearID": "string*",
+          "MaximumFTE": "string*",
+          "OptimalFTE": "string*",
+          "TotalPositionFTE": "string*"
+        },
+        "operations": {
+          "Position_FTEGroupList": {
+            "method": "get",
+            "call": {
+              "mode": "iteration",
+              "table": "FYOpen_District_FiscalYear",
+              "iterator": "FiscalYearID",
+              "iterator_columns": ["EntityID"],
+			        "queryParameters": {
+                "FiscalYearId": "{iterator}"
+              },
+              "path": "/Custom/{EntityID}/Position/FTEGroup"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "FYOpen_Position_JobType": {
+        "key": "JobTypeID",
+        "resources": {
+          "JobTypeID": "string*",
+          "Code": "string*",
+          "CodeDescription": "string*",
+          "Description": "string*",
+          "DistrictID": "string*",
+          "FiscalYearID": "string*"
+        },
+        "operations": {
+          "Position_JobTypeList": {
+            "method": "get",
+            "call": {
+              "mode": "iteration",
+              "table": "FYOpen_District_FiscalYear",
+              "iterator": "FiscalYearID",
+              "iterator_columns": ["EntityID"],
+			        "queryParameters": {
+                "FiscalYearId": "{iterator}"
+              },
+              "path": "/Custom/{EntityID}/Position/JobType"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "FYOpen_Position_Lane": {
+        "key": "LaneID",
+        "resources": {
+          "LaneID": "string*",
+          "Code": "string*",
+          "CodeDescription": "string*",
+          "Description": "string*",
+          "DistrictID": "string*"
+        },
+        "operations": {
+          "Position_LaneList": {
+            "method": "get",
+            "call": {
+              "mode": "iteration",
+              "table": "FYOpen_District_FiscalYear",
+              "iterator": "FiscalYearID",
+              "iterator_columns": ["EntityID"],
+			        "queryParameters": {
+                "FiscalYearId": "{iterator}"
+              },
+              "path": "/Custom/{EntityID}/Position/Lane"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "FYOpen_Position_Matrix": {
+        "key": "MatrixID",
+        "resources": {
+          "MatrixID": "string*",
+          "Code": "string*",
+          "CodeDescription": "string*",
+          "Description": "string*",
+          "DistrictID": "string*",
+          "FiscalYearID": "string*"
+        },
+        "operations": {
+          "Position_MatrixList": {
+            "method": "get",
+            "call": {
+              "mode": "iteration",
+              "table": "FYOpen_District_FiscalYear",
+              "iterator": "FiscalYearID",
+              "iterator_columns": ["EntityID"],
+			        "queryParameters": {
+                "FiscalYearId": "{iterator}"
+              },
+              "path": "/Custom/{EntityID}/Position/Matrix"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "FYOpen_Position_MatrixLane": {
+        "key": "MatrixLaneID",
+        "resources": {
+          "MatrixLaneID": "string*",
+          "DisplayOrder": "string*",
+          "LaneID": "string*"
+        },
+        "operations": {
+          "Position_MatrixLaneList": {
+            "method": "get",
+            "call": {
+              "mode": "iteration",
+              "table": "FYOpen_District_FiscalYear",
+              "iterator": "FiscalYearID",
+              "iterator_columns": ["EntityID"],
+			        "queryParameters": {
+                "FiscalYearId": "{iterator}"
+              },
+              "path": "/Custom/{EntityID}/Position/MatrixLane"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "FYOpen_Position_OrganizationChart": {
+        "key": "OrganizationChartID",
+        "resources": {
+          "OrganizationChartID": "string*",
+          "Code": "string*",
+          "CodeDescription": "string*",
+          "Description": "string*",
+          "DistrictID": "string*",
+          "FiscalYearID": "string*"
+        },
+        "operations": {
+          "Position_OrganizationChartList": {
+            "method": "get",
+            "call": {
+              "mode": "iteration",
+              "table": "FYOpen_District_FiscalYear",
+              "iterator": "FiscalYearID",
+              "iterator_columns": ["EntityID"],
+			        "queryParameters": {
+                "FiscalYearId": "{iterator}"
+              },
+              "path": "/Custom/{EntityID}/Position/OrganizationChart"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "FYOpen_Position_OrganizationChartApprover": {
+        "key": "OrganizationChartRelationshipIDSupervisor",
+        "resources": {
+          "OrganizationChartRelationshipIDSupervisor": "string*",
+          "IsFinalApproval": "boolean*",
+          "LevelsBelowSupervisor": "string*",
+          "OrganizationChartID": "string*",
+          "PositionDistributionID": "string*",
+          "PositionIDEmployee": "string*",
+          "PositionIDSupervisor": "string*"
+        },
+        "operations": {
+          "Position_OrganizationChartApproverList": {
+            "method": "get",
+            "call": {
+              "mode": "iteration",
+              "table": "FYOpen_District_FiscalYear",
+              "iterator": "FiscalYearID",
+              "iterator_columns": ["EntityID"],
+			        "queryParameters": {
+                "FiscalYearId": "{iterator}"
+              },
+              "path": "/Custom/{EntityID}/Position/OrganizationChartApprover"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "FYOpen_Position_Placement": {
+        "key": "PlacementID",
+        "resources": {
+          "PlacementID": "string*",
+          "Code": "string*",
+          "CodeDescription": "string*",
+          "Description": "string*",
+          "DistrictID": "string*"
+        },
+        "operations": {
+          "Position_PlacementList": {
+            "method": "get",
+            "call": {
+              "mode": "iteration",
+              "table": "FYOpen_District_FiscalYear",
+              "iterator": "FiscalYearID",
+              "iterator_columns": ["EntityID"],
+			        "queryParameters": {
+                "FiscalYearId": "{iterator}"
+              },
+              "path": "/Custom/{EntityID}/Position/Placement"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "FYOpen_Position_Position": {
+        "key": "PositionID",
+        "resources": {
+          "PositionID": "string*",
+          "AvailableClosingFTE": "string*",
+          "CalendarID": "string*",
+          "DistrictID": "string*",
+          "EndDate": "string*",
+          "FiscalYearID": "string*",
+          "JobTypeID": "string*",
+          "PositionClosingAssignmentIdentifier": "string*",
+          "PositionCodeIdentifier": "string*",
+          "PositionDistributionsAssignmentTypeCodes": "string*",
+          "PositionDistributionsAssignmentTypeDescriptions": "string*",
+          "PositionDistributionsBuildingCodes": "string*",
+          "PositionDistributionsBuildingDescriptions": "string*",
+          "PositionDistributionsDepartmentCodes": "string*",
+          "PositionDistributionsDepartmentDescriptions": "string*",
+          "PositionDistributionsFTEGroupCodes": "string*",
+          "PositionDistributionsFTEGroupDescriptions": "string*",
+          "PositionGroupID": "string*",
+          "PositionNumberID": "string*",
+          "PositionTypeAssignmentTypeCodes": "string*",
+          "PositionTypeID": "string*",
+          "StartDate": "string*",
+          "VacantClosingAssignmentFTE": "string*",
+          "VacantCurrentAssignmentFTE": "string*"
+        },
+        "operations": {
+          "Position_PositionList": {
+            "method": "get",
+            "call": {
+              "mode": "iteration",
+              "table": "FYOpen_District_FiscalYear",
+              "iterator": "FiscalYearID",
+              "iterator_columns": ["EntityID"],
+			        "queryParameters": {
+                "FiscalYearId": "{iterator}"
+              },
+              "path": "/Custom/{EntityID}/Position/Position"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "FYOpen_Position_PositionDistribution": {
+        "key": "PositionDistributionID",
+        "resources": {
+          "PositionDistributionID": "string*",
+          "AssignmentTypeID": "string*",
+          "BudgetedFTE": "string*",
+          "BudgetedHoursPerDay": "string*",
+          "BuildingID": "string*",
+          "CalculatedBudgetedHoursPerDay": "string*",
+          "ClosingAssignmentFTE": "string*",
+          "DepartmentID": "string*",
+          "FTEGroupID": "string*",
+          "PositionDistributionSetID": "string*",
+          "PositionID": "string*",
+          "VacantClosingAssignmentFTE": "string*"
+        },
+        "operations": {
+          "Position_PositionDistributionList": {
+            "method": "get",
+            "call": {
+              "mode": "iteration",
+              "table": "FYOpen_District_FiscalYear",
+              "iterator": "FiscalYearID",
+              "iterator_columns": ["EntityID"],
+			        "queryParameters": {
+                "FiscalYearId": "{iterator}"
+              },
+              "path": "/Custom/{EntityID}/Position/PositionDistribution"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "FYOpen_Position_PositionDistributionSet": {
+        "key": "PositionDistributionSetID",
+        "resources": {
+          "PositionDistributionSetID": "string*",
+          "AccountDistribution": "string*",
+          "BudgetedFTE": "string*",
+          "EndDate": "string*",
+          "IsClosing": "string*",
+          "IsCurrent": "string*",
+          "PositionDistributionsAssignmentTypeCodeDescriptions": "string*",
+          "PositionDistributionsAssignmentTypeCodes": "string*",
+          "PositionDistributionsAssignmentTypeDescriptions": "string*",
+          "PositionDistributionsBuildingCodes": "string*",
+          "PositionDistributionsBuildingDescriptions": "string*",
+          "PositionDistributionsDepartmentCodes": "string*",
+          "PositionDistributionsDepartmentDescriptions": "string*",
+          "PositionDistributionsFTEGroupCodes": "string*",
+          "PositionDistributionsFTEGroupDescriptions": "string*",
+          "PositionID": "string*",
+          "StartDate": "string*"
+        },
+        "operations": {
+          "Position_PositionDistributionSetList": {
+            "method": "get",
+            "call": {
+              "mode": "iteration",
+              "table": "FYOpen_District_FiscalYear",
+              "iterator": "FiscalYearID",
+              "iterator_columns": ["EntityID"],
+			        "queryParameters": {
+                "FiscalYearId": "{iterator}"
+              },
+              "path": "/Custom/{EntityID}/Position/PositionDistributionSet"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "FYOpen_Position_PositionGroup": {
+        "key": "PositionGroupID",
+        "resources": {
+          "PositionGroupID": "string*",
+          "Code": "string*",
+          "CodeDescription": "string*",
+          "Description": "string*",
+          "DistrictID": "string*",
+          "FiscalYearID": "string*"
+        },
+        "operations": {
+          "Position_PositionGroupList": {
+            "method": "get",
+            "call": {
+              "mode": "iteration",
+              "table": "FYOpen_District_FiscalYear",
+              "iterator": "FiscalYearID",
+              "iterator_columns": ["EntityID"],
+			        "queryParameters": {
+                "FiscalYearId": "{iterator}"
+              },
+              "path": "/Custom/{EntityID}/Position/PositionGroup"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "FYOpen_Position_PositionNumber": {
+        "key": "PositionNumberID",
+        "resources": {
+          "PositionNumberID": "string*",
+          "Code": "string*",
+          "DistrictID": "string*",
+          "FullPositionNumber": "string*",
+          "HasActiveJobPosting": "string*",
+          "HasPositionInFiscalYear": "string*",
+          "IsActive": "string*"
+        },
+        "operations": {
+          "Position_PositionNumberList": {
+            "method": "get",
+            "call": {
+              "mode": "iteration",
+              "table": "FYOpen_District_FiscalYear",
+              "iterator": "FiscalYearID",
+              "iterator_columns": ["EntityID"],
+			        "queryParameters": {
+                "FiscalYearId": "{iterator}"
+              },
+              "path": "/Custom/{EntityID}/Position/PositionNumber"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "FYOpen_Position_PositionType": {
+        "key": "PositionTypeID",
+        "resources": {
+          "PositionTypeID": "string*",
+          "BudgetedFTE": "string*",
+          "CalendarID": "string*",
+          "ClosingAssignmentFTE": "string*",
+          "Code": "string*",
+          "CodeDescription": "string*",
+          "Description": "string*",
+          "DistrictID": "string*",
+          "FiscalYearID": "string*",
+          "FTEGroupID": "string*",
+          "PlanPositionDistributionsForPlanGroupFTE": "string*",
+          "StateReportingDistributionSummaryClosingAssignmentFTE": "string*",
+          "StateReportingDistributionSummaryCurrentFTE": "string*",
+          "StateReportingDistributionSummaryVacantClosingAssignmentFTE": "string*"
+        },
+        "operations": {
+          "Position_PositionTypeList": {
+            "method": "get",
+            "call": {
+              "mode": "iteration",
+              "table": "FYOpen_District_FiscalYear",
+              "iterator": "FiscalYearID",
+              "iterator_columns": ["EntityID"],
+			        "queryParameters": {
+                "FiscalYearId": "{iterator}"
+              },
+              "path": "/Custom/{EntityID}/Position/PositionType"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      },
+      "FYOpen_Position_Step": {
+        "key": "StepID",
+        "resources": {
+          "StepID": "string*",
+          "Description": "string*",
+          "Increment": "string*",
+          "LaneIDOverride": "string*",
+          "MatrixIDOverride": "string*",
+          "MatrixLaneID": "string*",
+          "StepNumber": "string*"
+        },
+        "operations": {
+          "Position_StepList": {
+            "method": "get",
+            "call": {
+              "mode": "iteration",
+              "table": "FYOpen_District_FiscalYear",
+              "iterator": "FiscalYearID",
+              "iterator_columns": ["EntityID"],
+			        "queryParameters": {
+                "FiscalYearId": "{iterator}"
+              },
+              "path": "/Custom/{EntityID}/Position/Step"
+            },
+            "processing_options": {
+              "output_field": "Objects"
+            }
+          }
+        }
+      }
         }
     },
     "rest": {
@@ -3212,7 +3912,7 @@
             "sslLegacyProtocols": true,
             "get": {
                 "maxPageCount": 500,
-                "query_parameters": {},
+                "queryParameters": {},
                 "pagination": {
                     "mode": "url",
                     "field": "Paging.Next",
