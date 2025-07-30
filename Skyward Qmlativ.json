@@ -2734,7 +2734,13 @@
                         },
                         "mergeOutput": true,
                         "semantics": "update",
-                        "resource_allowance_default": "prohibited",
+                        "resource_allowance_default": "optional",
+						"resource_prohibited": [
+							 "AccessCode",
+							 "PasswordExpirationDate",
+							 "IsActive",
+							 "IsDeleted"
+						],
                         "resource_mandatory": [
                             "UserID",
                             "Username"
