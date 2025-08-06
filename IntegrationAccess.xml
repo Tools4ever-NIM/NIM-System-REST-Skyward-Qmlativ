@@ -9,6 +9,7 @@
       <Field Name="BirthMonthDay" SkywardID="9127fba9-72d1-0d5f-14f3-c9e0cac4eb9d" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
       <Field Name="BirthYear" SkywardID="53ce8686-a355-01ab-0758-f0e20a3a0d2b" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
       <Field Name="CalculatedPrimaryFormattedPhoneNumber" SkywardID="09eac7d9-6387-0556-1d65-d925d5853fd6" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
+      <Field Name="ConversionKey" SkywardID="25eec22f-768c-082b-0599-d2788c9f0a85" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
       <Field Name="Ethnicity" SkywardID="a966e6ac-5c1d-0d26-134d-20f4cfb34b36" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
       <Field Name="EthnicityAndRace" SkywardID="f8d1eed5-15d7-07ee-356a-9bf45f0250f7" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
       <Field Name="ExternalUniqueIdentifier" SkywardID="268a9c43-7667-0caf-038d-317521a47376" IsReadAllowed="true" IsCreateAllowed="true" IsUpdateAllowed="true" />
@@ -494,7 +495,7 @@
     <Fields>
       <Field Name="UserID" SkywardID="5a75d1d0-7999-085d-0b6b-e83976e993e5" IsReadAllowed="true" IsCreateAllowed="true" IsUpdateAllowed="false" />
       <Field Name="AccessCode" SkywardID="bf5794eb-523b-0749-273d-b69379ce0d24" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
-      <Field Name="AuthenticationRoleID" SkywardID="7b31c4c7-762c-039e-3a8f-d2f8cced72db" IsReadAllowed="true" IsCreateAllowed="true" IsUpdateAllowed="false" />
+      <Field Name="AuthenticationRoleID" SkywardID="7b31c4c7-762c-039e-3a8f-d2f8cced72db" IsReadAllowed="true" IsCreateAllowed="true" IsUpdateAllowed="true" />
       <Field Name="IsActive" SkywardID="2c3c1bce-68c8-02cd-3274-7f883c2126d6" IsReadAllowed="true" IsCreateAllowed="true" IsUpdateAllowed="false" />
       <Field Name="IsDeleted" SkywardID="2d3f266e-0826-0a26-1e65-926aff2375a3" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
       <Field Name="NameID" SkywardID="d14e1a36-990f-0b50-328c-dab24c54ec18" IsReadAllowed="true" IsCreateAllowed="true" IsUpdateAllowed="false" />
