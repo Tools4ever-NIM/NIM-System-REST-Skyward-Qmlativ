@@ -2850,7 +2850,10 @@
                         },
                         "body": {
                             "DataObject": {
-                                "_nim_merge_attributes_": true
+                                "_nim_merge_attributes_": false,
+                                "DistrictID": "{DistrictID}",
+                                "NameID": "{NameID}",
+                                "StaffNumber": "{StaffNumber}"
                             }
                         },
                         "mergeOutput": true,
@@ -2874,7 +2877,9 @@
                             "IsCurrentStaffEntityYear",
                             "ModifiedTime",
                             "UserIDCreatedBy",
-                            "UserIDModifiedBy"
+                            "UserIDModifiedBy",
+                            "StaffMeetCount",
+                            "StaffWebsite"
                         ],
                         "resource_mandatory": [
                             "DistrictID",
@@ -2990,12 +2995,21 @@
                         },
                         "body": {
                             "DataObject": {
-                                "_nim_merge_attributes_": true
+                                "_nim_merge_attributes_": false,
+                                "StaffStaffTypeID": "{StaffStaffTypeID}",
+                                "EndDate": "{EndDate}",
+                                "IsPrimary": "{IsPrimary}",
+                                "StaffID": "{StaffID}",
+                                "StaffTypeID": "{StaffTypeID}",
+                                "StartDate": "{StartDate}"
                             }
                         },
                         "mergeOutput": true,
                         "semantics": "create",
                         "resource_allowance_default": "optional",
+                        "resource_prohibited": [
+                            "PositionDescription"
+                        ],
                         "resource_mandatory": [
                             "StaffID",
                             "StaffTypeID",
