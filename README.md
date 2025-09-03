@@ -3,6 +3,7 @@
 <img src="https://www.tools4ever.nl/connector-logos/skywardqmlativ-logo.png" width="256px">
 
 # Data Tables
+- Attendance Calendar
 - Curriculum Subject
 - Demographics Address
 - Demographics Country
@@ -60,6 +61,8 @@
 - Family StudentFamily
 - Family StudentGuardian
 - FoodService Customer
+- Payroll AssignmentPayType
+- Payroll PayType
 - Position Assignment
 - Position AssignmentDetail
 - Position AssignmentType
@@ -72,11 +75,14 @@
 - Position Lane
 - Position Matrix
 - Position MatrixLane
+- Position OrganizationChart
+- Position OrganizationChartApprover
 - Position Placement
 - Position Position
 - Position PositionDistribution
 - Position PositionDistributionSet
 - Position PositionGroup
+- Position PositionNumber
 - Position PositionType
 - Position Step
 - Scheduling CourseType
@@ -87,8 +93,9 @@
 - Scheduling Section
 - Scheduling StaffMeet
 - Scheduling StudentSection
+- Scheduling StudentSectionMeetSummary
 - Security AuthenticationRole
-- Security Groups
+- Security Group
 - Security Group Memberships
 - Security User
 - SkySys State
@@ -105,16 +112,41 @@
 - Student InternetAccessType
 - Student StudentCustomCode
 - Student Student
+- FYOpen District FiscalYear
+- FYOpen Position Assignment
+- FYOpen Position AssignmentDetail
+- FYOpen Position AssignmentType
+- FYOpen Position Department
+- FYOpen Position EmployeePlacement
+- FYOpen Position EmployeePlacementDetail
+- FYOpen Position EmployeePositionType
+- FYOpen Position FTEGroup
+- FYOpen Position JobType
+- FYOpen Position Lane
+- FYOpen Position Matrix
+- FYOpen Position MatrixLane
+- FYOpen Position OrganizationChart
+- FYOpen Position OrganizationChartApprover
+- FYOpen Position Placement
+- FYOpen Position Position
+- FYOpen Position PositionDistribution
+- FYOpen Position PositionDistributionSet
+- FYOpen Position PositionGroup
+- FYOpen Position PositionNumber
+- FYOpen Position PositionType
+- FYOpen Position Step
 
 
 # Actions
 - Demographics NameEmail
     - Create/Update/Delete
 - Demographics NamePhone
-    - Create/Update/Delete
+    - Create
 - Demographics Name
     - Create
 - Security User
+    - Create/Update
+- Security Group Membership
     - Create
 - Staff Staff
     - Create
