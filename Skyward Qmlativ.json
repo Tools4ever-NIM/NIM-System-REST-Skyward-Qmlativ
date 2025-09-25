@@ -2727,11 +2727,14 @@
                         "path": "/Custom/{entity_id}/Security/User/{UserID}?searchFields[0]=AuthenticationRoleID&searchFields[1]=IsActive&searchFields[2]=NameID&searchFields[3]=UserID&searchFields[4]=Username"
                         },
                         "body": {
-                        "DataObject": {
-                            "_nim_merge_attributes_": false,
-                            "Username": "{Username}"
-                        }
+                            "DataObject": {
+                                "_nim_merge_attributes_": false,
+                                "AuthenticationRoleID": "{AuthenticationRoleID}",
+                                "NameID": "{NameID}",
+                                "Username": "{Username}"
+                            }
                         },
+                        "removeBlankFields": true,
                         "mergeOutput": true,
                         "semantics": "update",
                         "resource_allowance_default": "optional",
