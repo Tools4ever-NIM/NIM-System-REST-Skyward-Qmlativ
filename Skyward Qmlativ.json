@@ -2716,7 +2716,6 @@
                         "resource_mandatory": [
                             "AuthenticationRoleID",
                             "IsActive",
-                            "NameID",
                             "Username"
                         ]
                     },
@@ -2730,7 +2729,6 @@
                             "DataObject": {
                                 "_nim_merge_attributes_": false,
                                 "AuthenticationRoleID": "{AuthenticationRoleID}",
-                                "NameID": "{NameID}",
                                 "Username": "{Username}"
                             }
                         },
