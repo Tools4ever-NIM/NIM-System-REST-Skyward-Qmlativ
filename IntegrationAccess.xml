@@ -1431,7 +1431,7 @@
     </Fields>
     <Relationships />
   </Object>
-  <Object Module="Security" Name="GroupMembership" SkywardID="4fe0a0a1-c5e0-4f71-b2d2-2d0a43dbd216" IsDeleteAllowed="false">
+  <Object Module="Security" Name="GroupMembership" SkywardID="4fe0a0a1-c5e0-4f71-b2d2-2d0a43dbd216" IsDeleteAllowed="true">
     <Fields>
       <Field Name="GroupMembershipID" SkywardID="63f3ef34-91d4-00b4-144c-6038285c9f65" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
       <Field Name="EntityID" SkywardID="62954f8c-d621-034f-1eda-405852dab0a2" IsReadAllowed="true" IsCreateAllowed="true" IsUpdateAllowed="false" />
