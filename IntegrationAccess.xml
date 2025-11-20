@@ -494,7 +494,7 @@
   <Object Module="Security" Name="User" SkywardID="67b98700-3fa9-44d2-8e0f-59a283b05663" IsDeleteAllowed="false">
     <Fields>
       <Field Name="UserID" SkywardID="5a75d1d0-7999-085d-0b6b-e83976e993e5" IsReadAllowed="true" IsCreateAllowed="true" IsUpdateAllowed="false" />
-      <Field Name="AccessCode" SkywardID="bf5794eb-523b-0749-273d-b69379ce0d24" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
+      <Field Name="AccessCode" SkywardID="bf5794eb-523b-0749-273d-b69379ce0d24" IsReadAllowed="true" IsCreateAllowed="true" IsUpdateAllowed="true" />
       <Field Name="AuthenticationRoleID" SkywardID="7b31c4c7-762c-039e-3a8f-d2f8cced72db" IsReadAllowed="true" IsCreateAllowed="true" IsUpdateAllowed="true" />
       <Field Name="IsActive" SkywardID="2c3c1bce-68c8-02cd-3274-7f883c2126d6" IsReadAllowed="true" IsCreateAllowed="true" IsUpdateAllowed="false" />
       <Field Name="IsDeleted" SkywardID="2d3f266e-0826-0a26-1e65-926aff2375a3" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
