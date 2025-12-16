@@ -1477,4 +1477,15 @@
     </Fields>
     <Relationships />
   </Object>
+  <Object Module="Student" Name="CustomCode" SkywardID="c90c9ec6-7e4d-48ba-9de1-2927b8c8cabe" IsDeleteAllowed="false">
+    <Fields>
+      <Field Name="CustomCodeID" SkywardID="bc229a49-88f5-08ff-2220-adcf5a47c48f" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
+      <Field Name="Code" SkywardID="5612593e-c13d-0981-3bc1-0271b844aa70" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
+      <Field Name="CodeDescription" SkywardID="db5a67ad-ad04-008e-1f9f-ae090711b213" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
+      <Field Name="CustomCodeTypeID" SkywardID="beb9e818-877d-0949-290f-36c08f7c796e" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
+      <Field Name="Description" SkywardID="d0d53468-26c3-0ea9-210e-b80dc2ff46ce" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
+      <Field Name="DistrictGroupKey" SkywardID="a278cb18-73b3-0453-012b-6807a999ae09" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
+    </Fields>
+    <Relationships />
+  </Object>
 </Config>
