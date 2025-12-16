@@ -855,7 +855,7 @@
                     "District_EntityList": {
                         "method": "get",
                         "call": {
-                            "path": "/Custom/{entity_id}/District/Entity"
+                            "path": "/Custom/{entity_id}/District/Entity?SchoolYearID={school_year_id}"
                         },
                         "processing_options": {
                             "output_field": "Objects"
