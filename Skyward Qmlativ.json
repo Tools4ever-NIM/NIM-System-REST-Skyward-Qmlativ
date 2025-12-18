@@ -2317,7 +2317,6 @@
                     "DistrictID": "string*",
                     "FiscalYearID": "string*",
                     "FTEGroupID": "string*",
-                    "PlanPositionDistributionsForPlanGroupFTE": "string*",
                     "StateReportingDistributionSummaryClosingAssignmentFTE": "string*",
                     "StateReportingDistributionSummaryCurrentFTE": "string*",
                     "StateReportingDistributionSummaryVacantClosingAssignmentFTE": "string*"
@@ -3969,7 +3968,6 @@
           "DistrictID": "string*",
           "FiscalYearID": "string*",
           "FTEGroupID": "string*",
-          "PlanPositionDistributionsForPlanGroupFTE": "string*",
           "StateReportingDistributionSummaryClosingAssignmentFTE": "string*",
           "StateReportingDistributionSummaryCurrentFTE": "string*",
           "StateReportingDistributionSummaryVacantClosingAssignmentFTE": "string*"
@@ -7401,17 +7399,6 @@
                         },
                         {
                             "field_name": "FTEGroupID",
-                            "field_type": "string",
-                            "include": true,
-                            "field_format": "",
-                            "field_source": "data",
-                            "javascript": "",
-                            "ref_col": [],
-                            "reference": false,
-                            "ref_col_fields": []
-                        },
-                        {
-                            "field_name": "PlanPositionDistributionsForPlanGroupFTE",
                             "field_type": "string",
                             "include": true,
                             "field_format": "",
