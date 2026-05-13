@@ -59,6 +59,8 @@
       <Field Name="NameTitleIDLegal" SkywardID="23caf0d0-483b-054c-3efa-6892b76e69d8" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
       <Field Name="OccupationID" SkywardID="3823a117-fc43-0719-019a-39b50edc6928" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
       <Field Name="Race" SkywardID="06def6f0-0996-04f0-0090-f0b2f6aa6681" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
+      <Field Name="RaceVerifiedBy" SkywardID="c590f20f-139f-0e18-24d7-a7d7e117a04e" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
+      <Field Name="RaceVerifiedDate" SkywardID="1f2ad926-07a1-077f-3e78-73297bb5fa2e" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
     </Fields>
     <Relationships />
   </Object>
