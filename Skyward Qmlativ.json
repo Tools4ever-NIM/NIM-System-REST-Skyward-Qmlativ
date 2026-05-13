@@ -561,7 +561,9 @@
                     "NameTitleID": "string*",
                     "NameTitleIDLegal": "string*",
                     "OccupationID": "string*",
-                    "Race": "string*"
+                    "Race": "string*",
+                    "RaceVerifiedBy": "string",
+                    "RaceVerifiedDate": "string"
                 },
                 "operations": {
                     "Demographics_NameList": {
