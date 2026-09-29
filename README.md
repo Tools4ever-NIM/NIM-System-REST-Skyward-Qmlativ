@@ -1,5 +1,7 @@
 # Skyward Qmlativ
 
+Read the [Skyward Qmlativ integration documentation](https://docs.nimsuite.com/en/integrations/skyward-qmlativ) for connector details and related guides.
+
 <img src="https://www.tools4ever.nl/connector-logos/skywardqmlativ-logo.png" width="256px">
 
 # Data Tables
