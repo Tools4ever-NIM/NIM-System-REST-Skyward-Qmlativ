@@ -2850,6 +2850,14 @@
                             "UserIDMember"
                         ]
                     }
+                },
+                "groupmembership": {
+                    "add_operation": "Security_GroupMembershipCreate",
+                    "remove_operation": "Security_GroupMembershipDeleter",
+                    "member_table": "Security_User",
+                    "group_table": "Security_Group",
+                    "member_attributes": { "UserID": "UserIDMember" },
+                    "group_attributes": { "GroupID": "GroupIDParent" }
                 }
             },
             "Security_User": {
