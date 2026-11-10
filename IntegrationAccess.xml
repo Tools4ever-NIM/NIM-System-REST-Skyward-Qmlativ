@@ -454,6 +454,10 @@
   <Object Module="Student" Name="Student" SkywardID="07d66382-6678-4f5f-9ff1-376c9118ab29" IsDeleteAllowed="false">
     <Fields>
       <Field Name="StudentID" SkywardID="16fc45fc-060c-011a-0b02-930b6f40bdf7" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
+      <Field Name="ActiveGiftedEndDate" SkywardID="d2a6feaf-7f4c-04b7-063b-030c61c1cf4c" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
+      <Field Name="ActiveGiftedStartDate" SkywardID="49c02b23-0250-0097-04f8-3e1a6ea4cdca" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
+      <Field Name="ActiveSpecialEducationEndDate" SkywardID="12b6bdf3-edca-0e4f-33d3-996c2c3891fb" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
+      <Field Name="ActiveSpecialEducationStartDate" SkywardID="04626873-7d46-0eba-03ac-b8709fa616ac" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
       <Field Name="CalculatedEntityYearIsActive" SkywardID="f3586890-86ae-0da4-0a5e-8c73d10e84e5" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
       <Field Name="CalculatedGrade" SkywardID="ad8ae8c0-b538-0f64-3274-ce1b2abc68e7" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
       <Field Name="CalculatedGradYear" SkywardID="fcb4dddf-ee2a-08a2-0d02-23b060a23633" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
@@ -469,6 +473,8 @@
       <Field Name="GraduationDate" SkywardID="70b682ba-651f-06c9-3d42-cd1664291724" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
       <Field Name="GraduationRequirementYear" SkywardID="5b0c1791-a5e0-02d0-2415-ee33dab308af" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
       <Field Name="GradYear" SkywardID="2bc61764-9583-0f66-3316-6266b7527cde" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
+      <Field Name="HasSpecialEducationIndicator" SkywardID="f91b4fa1-0754-0525-10d0-ba897e242702" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
+      <Field Name="IndicatorsXML" SkywardID="ead30b29-9ebf-0651-17e9-dbb0bbf91e6d" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
       <Field Name="IsActiveAsOfDate" SkywardID="c9537b86-13f4-017c-020d-934dad067a34" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
       <Field Name="IsCurrentActive" SkywardID="4e589927-2392-0b63-2469-3f724b4251fe" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
       <Field Name="IsCurrentActiveDefaultEnrollment" SkywardID="070d7f1a-61d9-0753-0cbc-45f8bc9b7f87" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
@@ -1536,6 +1542,18 @@
       <Field Name="Description" SkywardID="e02d4ef3-be9c-0e78-3057-cb137e5177e0" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
       <Field Name="EndDate" SkywardID="45f1a315-c5f7-0278-23d9-1d4b872bf394" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
       <Field Name="StartDate" SkywardID="3dd5b0d1-b18e-09ac-308f-3ba3d1537e56" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
+    </Fields>
+    <Relationships />
+  </Object>
+  <Object Module="Student" Name="Indicator" SkywardID="503de3c8-f3b9-4ecf-86f9-be9591856d5e" IsDeleteAllowed="false">
+    <Fields>
+      <Field Name="IndicatorID" SkywardID="39b7e4e7-1432-02e4-255f-6b059d8c1e31" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
+      <Field Name="Image" SkywardID="505f6875-9d72-00d0-0c2f-7de202278c96" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
+      <Field Name="ImageCode" SkywardID="03451b4c-44f6-0b59-1a25-512bce229c36" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
+      <Field Name="IsActive" SkywardID="6c6d24e7-f396-0db1-1e08-c1bc18471ec3" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
+      <Field Name="Name" SkywardID="9db87336-969f-0644-2ad0-be3d316766c5" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
+      <Field Name="Rank" SkywardID="1c35b02c-bbff-0da6-2cc5-b0d41f1ed1ee" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
+      <Field Name="SkywardID" SkywardID="70f4c861-005a-0e57-3323-4ada1b8bddee" IsReadAllowed="true" IsCreateAllowed="false" IsUpdateAllowed="false" />
     </Fields>
     <Relationships />
   </Object>
